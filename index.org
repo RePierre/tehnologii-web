@@ -23,7 +23,10 @@
   :PROPERTIES:
   :CUSTOM_ID: contact
   :END:
-** Email
+** E-mail
+:PROPERTIES:
+:CUSTOM_ID: e-mail
+:END:
    #+begin_src emacs-lisp :exports code
    (concat "petru" "." "rebeja" "@gmail.com")
    #+end_src
