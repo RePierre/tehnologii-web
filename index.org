@@ -1,0 +1,29 @@
+#+title: Tehnologii Web 2025
+#+author: Petru Rebeja
+#+description: Pagina laboratorului Tehnologii Web 2025. Facultatea de Informatică, Universitatea „Alexandru Ioan Cuza” din Iași.
+#+language: ro
+#+select_tags: export
+#+startup: content
+#+exclude_tags: noexport
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: timestamp:nil title:t toc:t todo:t |:t
+#+options: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+setupfile: theme-readtheorg.setup
+#+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
+
+* Resurse utile
+:PROPERTIES:
+:CUSTOM_ID: resurse-utile
+:END:
+- [[https://replit.com/][Replit]]
+- [[https://php-fiddle.com/][PHP-fiddle]]
+
+* Date de contact
+  :PROPERTIES:
+  :CUSTOM_ID: contact
+  :END:
+** Email
+   #+begin_src emacs-lisp :exports code
+   (concat "petru" "." "rebeja" "@gmail.com")
+   #+end_src
