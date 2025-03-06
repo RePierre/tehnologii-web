@@ -23,6 +23,7 @@
 - [[https://locallhost.me/][localhost.me]]
 - [[https://almanac.httparchive.org/en/2024/][Web Almanac 2024]]
 - [[https://developer.mozilla.org/en-US/docs/Learn][Learn Web Development | MDN]]
+- https://validator.w3.org/
 
 * Date de contact
   :PROPERTIES:
