@@ -31,6 +31,14 @@
 - Cascading Style Sheets
 - Validarea codului CSS
 
+* Săptămâna 3
+:PROPERTIES:
+:CUSTOM_ID: s03
+:END:
+
+- Recapitulare curs
+- Continuăm experimentele cu CSS
+
 * Resurse utile
 :PROPERTIES:
 :CUSTOM_ID: resurse-utile
