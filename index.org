@@ -48,6 +48,16 @@
 - Arhitectura MVC
 - CSS
 
+* Întrebări frecvente
+:PROPERTIES:
+:CUSTOM_ID: faq
+:END:
+
+- Putem folosi =TypeScript= pentru dezvoltarea proiectului? :: Da.
+- Putem folosi =Rust= pentru dezvoltarea proiectului? :: Da, dar fără a folosi vreun cadru de lucru (framework).
+- Putem folosi =Bootstrap= pentru interfața Web? :: Nu. Deși nu este cadru de lucru, este important să înțelegeți fundamentele pe care biblioteca =Bootstrap= (și altele asemănătoare) le abstractizează.
+- Echipele pentru proiect trebuie formate din aceeași grupă? :: Nu neapărat. Echipele pot fi formate din grupele aceluiași profesor.
+
 * Resurse utile
 :PROPERTIES:
 :CUSTOM_ID: resurse-utile
