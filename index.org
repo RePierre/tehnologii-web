@@ -39,6 +39,15 @@
 - Recapitulare curs
 - Continuăm experimentele cu CSS
 
+* Săptămâna 4
+:PROPERTIES:
+:CUSTOM_ID: s04
+:END:
+
+- Recapitulare curs
+- Arhitectura MVC
+- CSS
+
 * Resurse utile
 :PROPERTIES:
 :CUSTOM_ID: resurse-utile
