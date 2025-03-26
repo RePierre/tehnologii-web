@@ -48,6 +48,14 @@
 - Arhitectura MVC
 - CSS
 
+* Săptămâna 5
+:PROPERTIES:
+:CUSTOM_ID: s05
+:END:
+
+- Recapitulare curs
+- Recapitulare HTML și CSS
+
 * Întrebări frecvente
 :PROPERTIES:
 :CUSTOM_ID: faq
