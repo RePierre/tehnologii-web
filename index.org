@@ -54,7 +54,7 @@
 :END:
 
 - Recapitulare curs
-- Recapitulare HTML și CSS
+- [[./e01/][Recapitulare HTML și CSS]]
 
 * Întrebări frecvente
 :PROPERTIES:
