@@ -63,6 +63,8 @@
 :CUSTOM_ID: faq
 :END:
 
+- Avem voie cu documentație/calculator la examen? :: Nu. Examenul va fi unul clasic; veți avea nevoie doar de pix și foi de hârtie.
+- Putem propune idei de proiecte proprii? :: Nu.
 - Putem folosi =TypeScript= pentru dezvoltarea proiectului? :: Da.
 - Putem folosi =Rust= pentru dezvoltarea proiectului? :: Da, dar fără a folosi vreun cadru de lucru (framework).
 - Putem folosi =Bootstrap= pentru interfața Web? :: Nu. Deși nu este cadru de lucru, este important să înțelegeți fundamentele pe care biblioteca =Bootstrap= (și altele asemănătoare) le abstractizează.
