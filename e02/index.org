@@ -1,17 +1,18 @@
-#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
-#+options: author:t broken-links:nil c:nil creator:nil
-#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
-#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
-#+options: timestamp:t title:t toc:t todo:t |:t
-#+title: Introducere în PHP
+#+title: Hello World din PHP și Docker
 #+date: <2025-04-02 Mi>
 #+author: Petru Rebeja
 #+email: petru.rebeja@gmail.com
 #+language: ro
 #+select_tags: export
+#+startup: content
 #+exclude_tags: noexport
-#+creator: Emacs 29.4 (Org mode 9.6.15)
-#+cite_export:
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: timestamp:nil title:t toc:t todo:t |:t
+#+options: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+setupfile: ../theme-readtheorg.setup
+#+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
+
 
 * Pregătirea mediului de lucru
 
@@ -23,10 +24,10 @@
 
 * Rulare script
 
-** Descărcăm imaginea =php:8=
+** Descărcăm imaginea =php:8.2-cli=
 
 #+begin_src shell :results none
-  podman pull php:8.2-cli
+  docker pull php:8.2-cli
 #+end_src
 
 ** Creăm un script
@@ -44,7 +45,7 @@
 
 #+begin_src shell
   cd /tmp/tehnologii-web/ && \
-  podman run \
+  docker run \
          -it \
          --rm \
          --name my-running-script \
@@ -55,10 +56,10 @@
 
 * Rulare pagnă
 
-** Descărcăm imaginea =php:8=
+** Descărcăm imaginea =php:8.2-apache=
 
 #+begin_src shell :results none
-  podman pull php:8.2-apache
+  docker pull php:8.2-apache
 #+end_src
 
 ** Creăm o pagină
@@ -91,22 +92,16 @@
 
 #+begin_src shell :results silent
   cd /tmp/tehnologii-web/ && \
-  podman build -t hello-world-php . && \
-  podman run -d -p 8081:80 --name hw-app-container hello-world-php
+  docker build -t hello-world-php . && \
+  docker run -d -p 8081:80 --name hw-app-container hello-world-php
 #+end_src
 
 Aplicația =PHP= poate fi accesată la adresa http://localhost:8081/.
 
 ** Oprim containerul și ștergem imaginea
 
-#+begin_src shell
-  podman stop hw-app-container && \
-      podman rm hw-app-container && \
-      podman rmi localhost/hello-world-php
+#+begin_src shell :results silent
+  docker stop hw-app-container && \
+      docker rm hw-app-container && \
+      docker rmi localhost/hello-world-php
 #+end_src
-
-#+RESULTS:
-| hw-app-container |                                                                  |
-| hw-app-container |                                                                  |
-| Untagged:        | localhost/hello-world-php:latest                                 |
-| Deleted:         | f9cfefe3c8ff0e4d396c6d8c6a7b272557dafe7c77820433b9b9a1ba9a1c65aa |
