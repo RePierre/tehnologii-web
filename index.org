@@ -58,6 +58,14 @@
   - [[./e01/][exercițiu]]
   - [[./e01/r/][(o posibilă) rezolvare]]
 
+* Săptămâna 6
+:PROPERTIES:
+:CUSTOM_ID: s06
+:END:
+
+- Recapitulare curs
+- =Hello World!= din PHP și Docker
+
 * Întrebări frecvente
 :PROPERTIES:
 :CUSTOM_ID: faq
