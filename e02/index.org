@@ -13,6 +13,11 @@
 #+setupfile: ../theme-readtheorg.setup
 #+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
 
+* Introducere
+
+Pentru lucrul la acest exercițiu aveți nevoie de [[https://www.docker.com/][Docker]].
+
+Instrucțiunile din acest exercițiu sunt pentru GNU/Linux. Acestea ar trebui să funcționeze și pe Mac OS, dar nu au fost testate pe acest sistem de operare.  Dacă utilizați sistemul de operare Windows, activați [[https://learn.microsoft.com/en-us/windows/wsl/install][Windows Subsystem for Linux]] și [[https://docs.docker.com/desktop/features/wsl/][integrarea WSL cu Docker]]; apoi utilizați consola =Bash= pentru a rula comenzile din acest exercițiu.
 
 * Pregătirea mediului de lucru
 
@@ -22,7 +27,7 @@
   mkdir -p /tmp/tehnologii-web/
 #+end_src
 
-* Rulare script
+* Rularea unui script PHP într-un container Docker
 
 ** Descărcăm imaginea =php:8.2-cli=
 
@@ -54,7 +59,7 @@
          php:8.2-cli php hw.php
 #+end_src
 
-* Rulare pagnă
+* Construirea unei imagini Docker folosind [[https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/][Dockerfile]]
 
 ** Descărcăm imaginea =php:8.2-apache=
 
@@ -105,3 +110,9 @@ Aplicația =PHP= poate fi accesată la adresa http://localhost:8081/.
       docker rm hw-app-container && \
       docker rmi localhost/hello-world-php
 #+end_src
+
+
+* Resurse utile
+
+- [[https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/][Conceptele Docker]]
+- [[https://docs.docker.com/reference/dockerfile/][Formatul fișierului Dockerfile]]

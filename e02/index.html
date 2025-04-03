@@ -23,47 +23,61 @@
 <h2>Cuprins</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgc094a17">Pregătirea mediului de lucru</a>
+<li><a href="#orga63ed35">Introducere</a></li>
+<li><a href="#org47da297">Pregătirea mediului de lucru</a>
 <ul>
-<li><a href="#org60b1773">Crearea directorului pentru codul-sursă</a></li>
+<li><a href="#org2a901c6">Crearea directorului pentru codul-sursă</a></li>
 </ul>
 </li>
-<li><a href="#org3c56fc0">Rulare script</a>
+<li><a href="#org666d784">Rularea unui script PHP într-un container Docker</a>
 <ul>
-<li><a href="#org45be120">Descărcăm imaginea <code>php:8.2-cli</code></a></li>
-<li><a href="#orga8f6b23">Creăm un script</a>
+<li><a href="#orgc8ca77e">Descărcăm imaginea <code>php:8.2-cli</code></a></li>
+<li><a href="#org59907c6">Creăm un script</a>
 <ul>
-<li><a href="#orgb56d7af">Verificăm că scriptul a fost creat</a></li>
+<li><a href="#org5896def">Verificăm că scriptul a fost creat</a></li>
 </ul>
 </li>
-<li><a href="#orgfd7eea1">Rulăm scriptul într-un container</a></li>
+<li><a href="#org4be74ed">Rulăm scriptul într-un container</a></li>
 </ul>
 </li>
-<li><a href="#org28a64ae">Rulare pagnă</a>
+<li><a href="#org16e4a4d">Construirea unei imagini Docker folosind Dockerfile</a>
 <ul>
-<li><a href="#org1fa084a">Descărcăm imaginea <code>php:8.2-apache</code></a></li>
-<li><a href="#orga92147b">Creăm o pagină</a>
+<li><a href="#orgc6980b2">Descărcăm imaginea <code>php:8.2-apache</code></a></li>
+<li><a href="#orga5c2d8c">Creăm o pagină</a>
 <ul>
-<li><a href="#org2e530a9">Verificăm dacă scriptul <code>PHP</code> a fost creat</a></li>
+<li><a href="#org4d93f03">Verificăm dacă scriptul <code>PHP</code> a fost creat</a></li>
 </ul>
 </li>
-<li><a href="#org1db376c">Creăm fișierul <code>Dockerfile</code></a></li>
-<li><a href="#orgda30d8a">Construim imaginea <code>Docker</code> și rulăm aplicația într-un container</a></li>
-<li><a href="#org9e02802">Oprim containerul și ștergem imaginea</a></li>
+<li><a href="#org5c2a12d">Creăm fișierul <code>Dockerfile</code></a></li>
+<li><a href="#orgf3758f4">Construim imaginea <code>Docker</code> și rulăm aplicația într-un container</a></li>
+<li><a href="#org9d1219b">Oprim containerul și ștergem imaginea</a></li>
 </ul>
 </li>
+<li><a href="#org1af8f46">Resurse utile</a></li>
 </ul>
 </div>
 </div>
 
+<div id="outline-container-orga63ed35" class="outline-2">
+<h2 id="orga63ed35">Introducere</h2>
+<div class="outline-text-2" id="text-orga63ed35">
+<p>
+Pentru lucrul la acest exercițiu aveți nevoie de <a href="https://www.docker.com/">Docker</a>.
+</p>
 
-<div id="outline-container-orgc094a17" class="outline-2">
-<h2 id="orgc094a17">Pregătirea mediului de lucru</h2>
-<div class="outline-text-2" id="text-orgc094a17">
+<p>
+Instrucțiunile din acest exercițiu sunt pentru GNU/Linux. Acestea ar trebui să funcționeze și pe Mac OS, dar nu au fost testate pe acest sistem de operare.  Dacă utilizați sistemul de operare Windows, activați <a href="https://learn.microsoft.com/en-us/windows/wsl/install">Windows Subsystem for Linux</a> și <a href="https://docs.docker.com/desktop/features/wsl/">integrarea WSL cu Docker</a>; apoi utilizați consola <code>Bash</code> pentru a rula comenzile din acest exercițiu.
+</p>
 </div>
-<div id="outline-container-org60b1773" class="outline-3">
-<h3 id="org60b1773">Crearea directorului pentru codul-sursă</h3>
-<div class="outline-text-3" id="text-org60b1773">
+</div>
+
+<div id="outline-container-org47da297" class="outline-2">
+<h2 id="org47da297">Pregătirea mediului de lucru</h2>
+<div class="outline-text-2" id="text-org47da297">
+</div>
+<div id="outline-container-org2a901c6" class="outline-3">
+<h3 id="org2a901c6">Crearea directorului pentru codul-sursă</h3>
+<div class="outline-text-3" id="text-org2a901c6">
 <div class="org-src-container">
 <pre class="src src-shell">mkdir -p /tmp/tehnologii-web/
 </pre>
@@ -72,13 +86,13 @@
 </div>
 </div>
 
-<div id="outline-container-org3c56fc0" class="outline-2">
-<h2 id="org3c56fc0">Rulare script</h2>
-<div class="outline-text-2" id="text-org3c56fc0">
+<div id="outline-container-org666d784" class="outline-2">
+<h2 id="org666d784">Rularea unui script PHP într-un container Docker</h2>
+<div class="outline-text-2" id="text-org666d784">
 </div>
-<div id="outline-container-org45be120" class="outline-3">
-<h3 id="org45be120">Descărcăm imaginea <code>php:8.2-cli</code></h3>
-<div class="outline-text-3" id="text-org45be120">
+<div id="outline-container-orgc8ca77e" class="outline-3">
+<h3 id="orgc8ca77e">Descărcăm imaginea <code>php:8.2-cli</code></h3>
+<div class="outline-text-3" id="text-orgc8ca77e">
 <div class="org-src-container">
 <pre class="src src-shell">docker pull php:8.2-cli
 </pre>
@@ -86,18 +100,18 @@
 </div>
 </div>
 
-<div id="outline-container-orga8f6b23" class="outline-3">
-<h3 id="orga8f6b23">Creăm un script</h3>
-<div class="outline-text-3" id="text-orga8f6b23">
+<div id="outline-container-org59907c6" class="outline-3">
+<h3 id="org59907c6">Creăm un script</h3>
+<div class="outline-text-3" id="text-org59907c6">
 <div class="org-src-container">
-<pre class="src src-shell"><span style="color: #b294bb;">echo</span> <span style="color: #8abeb7;">"&lt;?php echo \"Hello World!\" ?&gt;"</span> &gt; /tmp/tehnologii-web/hw.php
+<pre class="src src-shell"><span style="color: #8959a8;">echo</span> <span style="color: #3e999f;">"&lt;?php echo \"Hello World!\" ?&gt;"</span> &gt; /tmp/tehnologii-web/hw.php
 </pre>
 </div>
 </div>
 
-<div id="outline-container-orgb56d7af" class="outline-4">
-<h4 id="orgb56d7af">Verificăm că scriptul a fost creat</h4>
-<div class="outline-text-4" id="text-orgb56d7af">
+<div id="outline-container-org5896def" class="outline-4">
+<h4 id="org5896def">Verificăm că scriptul a fost creat</h4>
+<div class="outline-text-4" id="text-org5896def">
 <div class="org-src-container">
 <pre class="src src-shell">ls -al /tmp/tehnologii-web/
 </pre>
@@ -105,17 +119,17 @@
 </div>
 </div>
 </div>
-<div id="outline-container-orgfd7eea1" class="outline-3">
-<h3 id="orgfd7eea1">Rulăm scriptul într-un container</h3>
-<div class="outline-text-3" id="text-orgfd7eea1">
+<div id="outline-container-org4be74ed" class="outline-3">
+<h3 id="org4be74ed">Rulăm scriptul într-un container</h3>
+<div class="outline-text-3" id="text-org4be74ed">
 <div class="org-src-container">
-<pre class="src src-shell"><span style="color: #b294bb;">cd</span> /tmp/tehnologii-web/ &amp;&amp; <span style="color: #8abeb7;">\</span>
-docker run <span style="color: #8abeb7;">\</span>
-       -it <span style="color: #8abeb7;">\</span>
-       --rm <span style="color: #8abeb7;">\</span>
-       --name my-running-script <span style="color: #8abeb7;">\</span>
-       -v <span style="color: #8abeb7;">"$PWD"</span>:/tmp/tehnologii-web <span style="color: #8abeb7;">\</span>
-       -w /tmp/tehnologii-web <span style="color: #8abeb7;">\</span>
+<pre class="src src-shell"><span style="color: #8959a8;">cd</span> /tmp/tehnologii-web/ &amp;&amp; <span style="color: #3e999f;">\</span>
+docker run <span style="color: #3e999f;">\</span>
+       -it <span style="color: #3e999f;">\</span>
+       --rm <span style="color: #3e999f;">\</span>
+       --name my-running-script <span style="color: #3e999f;">\</span>
+       -v <span style="color: #3e999f;">"$PWD"</span>:/tmp/tehnologii-web <span style="color: #3e999f;">\</span>
+       -w /tmp/tehnologii-web <span style="color: #3e999f;">\</span>
        php:8.2-cli php hw.php
 </pre>
 </div>
@@ -123,13 +137,13 @@ docker run <span style="color: #8abeb7;">\</span>
 </div>
 </div>
 
-<div id="outline-container-org28a64ae" class="outline-2">
-<h2 id="org28a64ae">Rulare pagnă</h2>
-<div class="outline-text-2" id="text-org28a64ae">
+<div id="outline-container-org16e4a4d" class="outline-2">
+<h2 id="org16e4a4d">Construirea unei imagini Docker folosind <a href="https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/">Dockerfile</a></h2>
+<div class="outline-text-2" id="text-org16e4a4d">
 </div>
-<div id="outline-container-org1fa084a" class="outline-3">
-<h3 id="org1fa084a">Descărcăm imaginea <code>php:8.2-apache</code></h3>
-<div class="outline-text-3" id="text-org1fa084a">
+<div id="outline-container-orgc6980b2" class="outline-3">
+<h3 id="orgc6980b2">Descărcăm imaginea <code>php:8.2-apache</code></h3>
+<div class="outline-text-3" id="text-orgc6980b2">
 <div class="org-src-container">
 <pre class="src src-shell">docker pull php:8.2-apache
 </pre>
@@ -137,24 +151,24 @@ docker run <span style="color: #8abeb7;">\</span>
 </div>
 </div>
 
-<div id="outline-container-orga92147b" class="outline-3">
-<h3 id="orga92147b">Creăm o pagină</h3>
-<div class="outline-text-3" id="text-orga92147b">
+<div id="outline-container-orga5c2d8c" class="outline-3">
+<h3 id="orga5c2d8c">Creăm o pagină</h3>
+<div class="outline-text-3" id="text-orga5c2d8c">
 <div class="org-src-container">
-<pre class="src src-shell"><span style="color: #b294bb;">echo</span> <span style="color: #8abeb7;">"&lt;!DOCTYPE html&gt;</span>
-<span style="color: #8abeb7;">&lt;html&gt;</span>
-<span style="color: #8abeb7;">  &lt;body&gt;</span>
-<span style="color: #8abeb7;">    &lt;?php echo \"Hello world!\" ?&gt;</span>
-<span style="color: #8abeb7;">  &lt;/body&gt;</span>
-<span style="color: #8abeb7;">&lt;/html&gt;</span>
-<span style="color: #8abeb7;">"</span> &gt; /tmp/tehnologii-web/index.php
+<pre class="src src-shell"><span style="color: #8959a8;">echo</span> <span style="color: #3e999f;">"&lt;!DOCTYPE html&gt;</span>
+<span style="color: #3e999f;">&lt;html&gt;</span>
+<span style="color: #3e999f;">  &lt;body&gt;</span>
+<span style="color: #3e999f;">    &lt;?php echo \"Hello world!\" ?&gt;</span>
+<span style="color: #3e999f;">  &lt;/body&gt;</span>
+<span style="color: #3e999f;">&lt;/html&gt;</span>
+<span style="color: #3e999f;">"</span> &gt; /tmp/tehnologii-web/index.php
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org2e530a9" class="outline-4">
-<h4 id="org2e530a9">Verificăm dacă scriptul <code>PHP</code> a fost creat</h4>
-<div class="outline-text-4" id="text-org2e530a9">
+<div id="outline-container-org4d93f03" class="outline-4">
+<h4 id="org4d93f03">Verificăm dacă scriptul <code>PHP</code> a fost creat</h4>
+<div class="outline-text-4" id="text-org4d93f03">
 <div class="org-src-container">
 <pre class="src src-shell">ls -al /tmp/tehnologii-web/
 </pre>
@@ -163,24 +177,24 @@ docker run <span style="color: #8abeb7;">\</span>
 </div>
 </div>
 
-<div id="outline-container-org1db376c" class="outline-3">
-<h3 id="org1db376c">Creăm fișierul <code>Dockerfile</code></h3>
-<div class="outline-text-3" id="text-org1db376c">
+<div id="outline-container-org5c2a12d" class="outline-3">
+<h3 id="org5c2a12d">Creăm fișierul <code>Dockerfile</code></h3>
+<div class="outline-text-3" id="text-org5c2a12d">
 <div class="org-src-container">
-<pre class="src src-shell"><span style="color: #b294bb;">echo</span> <span style="color: #8abeb7;">"FROM php:8.2-apache</span>
-<span style="color: #8abeb7;">COPY index.php /var/www/html/</span>
-<span style="color: #8abeb7;">"</span> &gt; /tmp/tehnologii-web/Dockerfile
+<pre class="src src-shell"><span style="color: #8959a8;">echo</span> <span style="color: #3e999f;">"FROM php:8.2-apache</span>
+<span style="color: #3e999f;">COPY index.php /var/www/html/</span>
+<span style="color: #3e999f;">"</span> &gt; /tmp/tehnologii-web/Dockerfile
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgda30d8a" class="outline-3">
-<h3 id="orgda30d8a">Construim imaginea <code>Docker</code> și rulăm aplicația într-un container</h3>
-<div class="outline-text-3" id="text-orgda30d8a">
+<div id="outline-container-orgf3758f4" class="outline-3">
+<h3 id="orgf3758f4">Construim imaginea <code>Docker</code> și rulăm aplicația într-un container</h3>
+<div class="outline-text-3" id="text-orgf3758f4">
 <div class="org-src-container">
-<pre class="src src-shell"><span style="color: #b294bb;">cd</span> /tmp/tehnologii-web/ &amp;&amp; <span style="color: #8abeb7;">\</span>
-docker build -t hello-world-php . &amp;&amp; <span style="color: #8abeb7;">\</span>
+<pre class="src src-shell"><span style="color: #8959a8;">cd</span> /tmp/tehnologii-web/ &amp;&amp; <span style="color: #3e999f;">\</span>
+docker build -t hello-world-php . &amp;&amp; <span style="color: #3e999f;">\</span>
 docker run -d -p 8081:80 --name hw-app-container hello-world-php
 </pre>
 </div>
@@ -191,16 +205,27 @@ Aplicația <code>PHP</code> poate fi accesată la adresa <a href="http://localho
 </div>
 </div>
 
-<div id="outline-container-org9e02802" class="outline-3">
-<h3 id="org9e02802">Oprim containerul și ștergem imaginea</h3>
-<div class="outline-text-3" id="text-org9e02802">
+<div id="outline-container-org9d1219b" class="outline-3">
+<h3 id="org9d1219b">Oprim containerul și ștergem imaginea</h3>
+<div class="outline-text-3" id="text-org9d1219b">
 <div class="org-src-container">
-<pre class="src src-shell">docker stop hw-app-container &amp;&amp; <span style="color: #8abeb7;">\</span>
-    docker rm hw-app-container &amp;&amp; <span style="color: #8abeb7;">\</span>
+<pre class="src src-shell">docker stop hw-app-container &amp;&amp; <span style="color: #3e999f;">\</span>
+    docker rm hw-app-container &amp;&amp; <span style="color: #3e999f;">\</span>
     docker rmi localhost/hello-world-php
 </pre>
 </div>
 </div>
+</div>
+</div>
+
+
+<div id="outline-container-org1af8f46" class="outline-2">
+<h2 id="org1af8f46">Resurse utile</h2>
+<div class="outline-text-2" id="text-org1af8f46">
+<ul class="org-ul">
+<li><a href="https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/">Conceptele Docker</a></li>
+<li><a href="https://docs.docker.com/reference/dockerfile/">Formatul fișierului Dockerfile</a></li>
+</ul>
 </div>
 </div>
 </div>
