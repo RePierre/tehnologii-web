@@ -66,6 +66,15 @@
 - Recapitulare curs
 - [[./e02/][=Hello World!= din PHP și Docker]]
 
+* Săptămâna 7
+:PROPERTIES:
+:CUSTOM_ID: s07
+:END:
+
+- Recapitulare curs
+- Formulare în PHP
+- Post-Redirect-Get
+
 * Întrebări frecvente
 :PROPERTIES:
 :CUSTOM_ID: faq
