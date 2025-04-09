@@ -72,7 +72,7 @@
 :END:
 
 - Recapitulare curs
-- Formulare în PHP
+- [[./e03/][Formulare în PHP]]
 - Post-Redirect-Get
 
 * Proiecte
