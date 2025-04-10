@@ -121,6 +121,16 @@ Salvați codul-sursă de mai jos într-un fișier numit =styles.css= sau creați
   }
 #+end_src
 
+** Docker
+
+Pentru a rula codul folosind o imagine =Docker=, mai întâi navigați în directorul în care ați salvat fișierele de mai sus și rulați comanda următoare:
+
+#+begin_src shell
+  docker run -d -p 8081:80 --name lab-tw -v "$PWD":/var/www/html php:8.2-apache
+#+end_src
+
+La sfârșit, opriți containerul folosind comanda = docker stop lab-tw=. Pentru a elimina containerul executați comanda =docker rm lab-tw=.
+
 * Cerințe
 
 + Adăugați un formular de feedback în pagină cu următoarele câmpuri: nume și mesaj.

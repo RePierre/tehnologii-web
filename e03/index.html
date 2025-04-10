@@ -23,25 +23,26 @@
 <h2>Cuprins</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgf9d0787">Resurse</a>
+<li><a href="#orgff2dd47">Resurse</a>
 <ul>
-<li><a href="#org983c2e0">index.php</a></li>
-<li><a href="#org17ec82f">register-feedback.php</a></li>
-<li><a href="#org528081c">styles.css</a></li>
+<li><a href="#org8cb5939">index.php</a></li>
+<li><a href="#org055b5b2">register-feedback.php</a></li>
+<li><a href="#orgd9b0dfe">styles.css</a></li>
+<li><a href="#orgcca3322">Docker</a></li>
 </ul>
 </li>
-<li><a href="#org29a10f0">Cerințe</a></li>
+<li><a href="#orgc8ac627">Cerințe</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgf9d0787" class="outline-2">
-<h2 id="orgf9d0787">Resurse</h2>
-<div class="outline-text-2" id="text-orgf9d0787">
+<div id="outline-container-orgff2dd47" class="outline-2">
+<h2 id="orgff2dd47">Resurse</h2>
+<div class="outline-text-2" id="text-orgff2dd47">
 </div>
-<div id="outline-container-org983c2e0" class="outline-3">
-<h3 id="org983c2e0">index.php</h3>
-<div class="outline-text-3" id="text-org983c2e0">
+<div id="outline-container-org8cb5939" class="outline-3">
+<h3 id="org8cb5939">index.php</h3>
+<div class="outline-text-3" id="text-org8cb5939">
 <p>
 Salvați codul-sursă de mai jos într-un fișier numit <code>index.php</code>.
 </p>
@@ -80,9 +81,9 @@ Salvați codul-sursă de mai jos într-un fișier numit <code>index.php</code>.
 </div>
 </div>
 
-<div id="outline-container-org17ec82f" class="outline-3">
-<h3 id="org17ec82f">register-feedback.php</h3>
-<div class="outline-text-3" id="text-org17ec82f">
+<div id="outline-container-org055b5b2" class="outline-3">
+<h3 id="org055b5b2">register-feedback.php</h3>
+<div class="outline-text-3" id="text-org055b5b2">
 <p>
 Salvați codul-sursă de mai jos într-un fișier numit <code>register-feedback.php</code>.
 </p>
@@ -96,9 +97,9 @@ Salvați codul-sursă de mai jos într-un fișier numit <code>register-feedback.
 </div>
 </div>
 
-<div id="outline-container-org528081c" class="outline-3">
-<h3 id="org528081c">styles.css</h3>
-<div class="outline-text-3" id="text-org528081c">
+<div id="outline-container-orgd9b0dfe" class="outline-3">
+<h3 id="orgd9b0dfe">styles.css</h3>
+<div class="outline-text-3" id="text-orgd9b0dfe">
 <p>
 Salvați codul-sursă de mai jos într-un fișier numit <code>styles.css</code> sau creați propiile stiluri.
 </p>
@@ -161,11 +162,29 @@ Salvați codul-sursă de mai jos într-un fișier numit <code>styles.css</code> 
 </div>
 </div>
 </div>
+
+<div id="outline-container-orgcca3322" class="outline-3">
+<h3 id="orgcca3322">Docker</h3>
+<div class="outline-text-3" id="text-orgcca3322">
+<p>
+Pentru a rula codul folosind o imagine <code>Docker</code>, mai întâi navigați în directorul în care ați salvat fișierele de mai sus și rulați comanda următoare:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">docker run -d -p 8081:80 --name lab-tw -v <span style="color: #3e999f;">"$PWD"</span>:/var/www/html php:8.2-apache
+</pre>
 </div>
 
-<div id="outline-container-org29a10f0" class="outline-2">
-<h2 id="org29a10f0">Cerințe</h2>
-<div class="outline-text-2" id="text-org29a10f0">
+<p>
+La sfârșit, opriți containerul folosind comanda = docker stop lab-tw=. Pentru a elimina containerul executați comanda <code>docker rm lab-tw</code>.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc8ac627" class="outline-2">
+<h2 id="orgc8ac627">Cerințe</h2>
+<div class="outline-text-2" id="text-orgc8ac627">
 <ul class="org-ul">
 <li>Adăugați un formular de feedback în pagină cu următoarele câmpuri: nume și mesaj.</li>
 <li>Implementați validarea datelor în <code>register-feedback.php</code></li>
