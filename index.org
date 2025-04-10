@@ -135,6 +135,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 - [[https://almanac.httparchive.org/en/2024/][Web Almanac 2024]]
 - [[https://developer.mozilla.org/en-US/docs/Learn][Learn Web Development | MDN]]
 - https://validator.w3.org/
+- [[https://www.troyhunt.com/10-commandments-of-good-source-control/][The 10 commandments of good source control management]]
 
 * Date de contact
   :PROPERTIES:
