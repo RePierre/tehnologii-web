@@ -87,27 +87,45 @@
 
 ** Propuneri proiecte
 *** =DeW= --- Device Web Recommender
+:PROPERTIES:
+:CUSTOM_ID: dew
+:END:
 
 Realizați o aplicație Web care recomanda utilizatorilor autentificați sau nu diverse dispozitive electronice (telefoane, tablete, ceasuri, drone,...) în funcție de preț ori alte caracteristici – e.g., model similar, facilități, culoare, autonomie etc. Datele analizate vor fi preluate din surse multiple (fluxuri de știri, API-uri disponibile, via scraping) oferite de situri de profil ce vor putea fi precizate de utilizator. Statisticile celor mai populare produse și recomandările generate vor fi disponibile și sub formă de fluxuri de știri RSS. Bonus: functionalitățile principale vor fi oferite de o extensie de navigator Web.
 
 *** =AMa= --- Abbreviation Management
+:PROPERTIES:
+:CUSTOM_ID: ama
+:END:
 
 Să se dezvolte o aplicație Web pentru managementul – e.g., explorare, vizualizare, specificare, memorare permanentă – de abrevieri cu semnificații multiple, în diverse limbi. Pe baza facilităților de căutare multi-criterială implementate, utilizatorii autentificați vor putea crea, inventaria și partaja informații despre abrevieri în funcție de diverse caracteristici (limbă, domeniu, dată etc.). Intern, informațiile referitoare la abrevieri vor fi stocate recurgând la [[https://docbook.org/][DocBook]]. Suplimentar, se va oferi suport pentru export (d)in formate precum HTML (e.g., <dt><dd>) și Markdown. Se vor genera statistici diverse ce pot fi exportate în formate deschise – minimal, CSV si PDF. Se va crea, de asemenea, un clasament al celor mai accesate abrevieri, disponibil și ca flux de date RSS.
 
 *** =GoH= --- The Game of SuperHeroes
+:PROPERTIES:
+:CUSTOM_ID: goh
+:END:
 
 Pe baza [[https://www.kaggle.com/fivethirtyeight/fivethirtyeight-comic-characters-dataset][datelor despre super-eroi]], să se creeze un joc Web educativ – cu scenariu, niveluri de dificulate, miză și condiții de victorie/înfrângere stabilite de echipă – destinat adolescentilor. Clasamentul celor mai buni jucatori va fi disponibil și ca flux RSS. Este necesară implementarea aspectelor precum [[https://www.w3.org/standards/webdesign/i18n][internaționalizarea]] și [[https://www.w3.org/WAI/fundamentals/accessibility-intro/][accesibilitatea]].
 
 *** =WoW= --- Workout Web Generator
+:PROPERTIES:
+:CUSTOM_ID: wow
+:END:
 
 Să se creeze o aplicație Web ce le propune utilizatorilor diverse tipuri de antrenamente privind activități de fizioterapie, kinetoterapie și/sau cu caracter sportiv. Exercițiile fizice gestionate vor fi personalizate în funcție de greutate, înălțime, vârsta, gen, condiție de sănătate și altele. Utilizatorii autentificați vor putea să specifice preferințe pentru antrenamentul dorit: grupe de mușchi, durată, locație (aer liber, acasă) etc, iar aplicația va genera o rutină cu instrucțiuni detaliate, plus exemple foto/video. Sistemul va oferi statistici relevante pentru fiecare utilizator în parte, care vor fi disponibile și ca flux de date RSS. Mai mult, un clasament al celor mai activi utilizatori – conform clasei de vârsta, tipului de antrenament etc. – va fi disponibil public, inclusiv în formatele JSON și PDF.
 
 
 *** =MeR= --- Media Review Manager
+:PROPERTIES:
+:CUSTOM_ID: mer
+:END:
 
 Se dorește crearea unei aplicații Web care permite specificarea adnotărilor textuale și a meta-datelor, plus exprimarea opiniilor vizând conținuturi (multi)media – de exemplu, imagini și/sau video-clipuri – realizate de o persoană sau grup de persoane. Sistemul va realiza managementul acesor conținuturi, inclusiv organizarea lor pe diverse criterii: categorie, an al realizării, legături cu alte resurse înrudite etc. Se vor oferi statistici textuale și grafice exportate în formate deschise – minimal, CSV și SVG, respectiv. Diversele anunțuri (o persoană a comentat un video-clip, a apărut o altă listă de filme de interes, modificarea clasamentului celor mai apreciate imagini ale lunii etc.) vor fi expuse ca flux de știr RSS. Listele de filme preferate vor fi importate/exportate (d)in formate precum JSON și XML. Bonus: recurgerea la un serviciu online (DailyMotion, Vimeo, Instagram, Unsplash).
 
 *** =ReW= --- Resource Web Planner
+:PROPERTIES:
+:CUSTOM_ID: rew
+:END:
 
 Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articolelor esențiale și consumabilelor (e.g., becuri, lemne pentru foc, condimente, toner, cosmetice, pahare de unică folosință, pioneze, medicamente de uz general, ...), plus a pieselor de schimb pentru diverse dispozitive -- de exemplu, aparate electr(on)ice, automobile, ascensoare etc. -- dintr-o gospodărie, organizație sau întreprindere. Instrumentul va fi capabil să notifice, periodic sau la date fixe (eventual, prestabilite), utilizatorul sau un grup de utilizatori în ceea ce privește epuizarea iminentă a unor materiale sau verificarea anumitor echipamente și angrenaje. Aceste notificări vor fi semnalate atât direct în cadrul interfeței aplicației, cât și prin poșta electronică. Se vor oferi posibilități de importare/exportare a datelor in formatele CSV, JSON și XML, iar diversele statistici generate vor putea fi consultate sub formă de documente HTML si PDF.
 
