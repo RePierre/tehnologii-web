@@ -1,0 +1,128 @@
+#+title: Lucrul cu formularele
+#+date: <2025-04-02 Mi>
+#+author: Petru Rebeja
+#+email: petru.rebeja@gmail.com
+#+language: ro
+#+select_tags: export
+#+startup: content
+#+exclude_tags: noexport
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: timestamp:nil title:t toc:t todo:t |:t
+#+options: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+setupfile: ../theme-readtheorg.setup
+#+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
+
+* Resurse
+
+
+** index.php
+
+Salvați codul-sursă de mai jos într-un fișier numit =index.php=.
+
+#+begin_src php
+  <!DOCTYPE html>
+  <html lang="ro">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Oale și ulcele</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="#">Pagina principală</a></li>
+                  <li><a href="#">Despre noi</a></li>
+                  <li><a href="#">Servicii</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <main>
+
+      </main>
+      <footer>
+          <p>Contact us at: deschide@oalesiulcele.ro</p>
+      </footer>
+  </body>
+  </html>
+#+end_src
+
+** register-feedback.php
+
+Salvați codul-sursă de mai jos într-un fișier numit =register-feedback.php=.
+
+#+begin_src php
+  <?php
+  echo "Implement me..."
+  ?>
+#+end_src
+
+** styles.css
+
+Salvați codul-sursă de mai jos într-un fișier numit =styles.css= sau creați propiile stiluri.
+
+#+begin_src css
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+  }
+
+  header {
+      background-color: #00ccff;
+      color: #fff;
+      padding: 1rem 0;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  nav ul li {
+      margin: 0 1rem;
+  }
+
+  nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+  }
+
+
+  footer {
+      background-color: #00ccff;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+  }
+
+  @media screen and (max-width: 449px){
+      nav ul {
+          flex-direction: column;
+          text-align: center;
+      }
+  }
+
+  @media screen and (min-width: 768px){
+      .cards {
+          flex-direction: row;
+          align-items: center;
+      }
+  }
+#+end_src
+
+* Cerințe
+
++ Adăugați un formular de feedback în pagină cu următoarele câmpuri: nume și mesaj.
++ Implementați validarea datelor în =register-feedback.php=
++ Dacă datele sunt valide, redirecționați clientul către =index.php=
