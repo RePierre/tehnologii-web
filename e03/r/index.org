@@ -1,0 +1,260 @@
+#+title: Lucrul cu formularele
+#+date: <2025-04-04 Vi>
+#+author: Petru Rebeja
+#+email: petru.rebeja@gmail.com
+#+language: ro
+#+select_tags: export
+#+startup: content
+#+exclude_tags: noexport
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: timestamp:nil title:t toc:t todo:t |:t
+#+options: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+setupfile: ../../theme-readtheorg.setup
+#+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
+
+* Resurse
+
+
+** index.php
+
+#+begin_src php
+  <?php
+  session_start();
+  ?>
+  <!DOCTYPE html>
+  <html lang="ro">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Oale și ulcele</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <header>
+          <nav>
+              <ul>
+                  <li><a href="#">Pagina principală</a></li>
+                  <li><a href="#">Despre noi</a></li>
+                  <li><a href="#">Servicii</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <main>
+       <?php
+       if (isset($_SESSION['success_msg'])) {
+           echo "<div class='success-msg'>{$_SESSION['success_msg']}</div>";
+           unset($_SESSION['success_msg']);
+       }
+       ?>
+       <form action="register-feedback.php" method="post">
+         <h1>Feedback</h1>
+         <div>
+           <label for="name">Nume:</label>
+           <input type="text" id="name" name="name" required placeholder="Introduceți numele" value="<?php echo isset($_SESSION['name'])?$_SESSION['name']:'' ?>"></input>
+           <span class="error"><?php echo isset($_SESSION['name_error'])?$_SESSION['name_error']:'' ?></span>
+         </div>
+         <div>
+           <label for="feedback">Mesaj:</label>
+           <textarea id="feedback" name="feedback" required rows="10" cols="50"><?php echo isset($_SESSION['feedback'])?$_SESSION['feedback']:'' ?></textarea>
+           <span class="error"><?php echo isset($_SESSION['feedback_error'])?$_SESSION['feedback_error']:'' ?></span>
+         </div>
+         <div>
+           <button type="submit">Trimite feedback</button>
+         </div>
+        </form>
+      </main>
+      <footer>
+          <p>Contact us at: deschide@oalesiulcele.ro</p>
+      </footer>
+  </body>
+  </html>
+#+end_src
+
+** register-feedback.php
+
+#+begin_src php
+  <?php
+  session_start();
+
+  function validate_name(string $name, int $min_length=1, int $max_length=INF) : string
+  {
+      $name = htmlspecialchars(trim($name));
+      $name_len = strlen($name);
+
+      if ($name_len < $min_length) {
+          return "Numele trebuie să fie alcătuit din minim {$min_length} caractere";
+      }
+
+      if ($name_len > $max_length && $max_length < INF) {
+          return "Numele trebuie să fie alcătuit din maxim {$max_length} caractere";
+      }
+
+      if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+          return "Numere trebuie să conțină doar litere, spații și cratime.";
+      }
+      return "";
+  }
+
+  function validate_feedback(string $feedback, int $min_length=1, int $max_length=INF) : string
+  {
+      $feedback = htmlspecialchars(trim($feedback));
+      $len = strlen($feedback);
+
+      if ($len < $min_length) {
+          return "Mesajul trebuie să fie alcătuit din minim {$min_length} caractere";
+      }
+
+      if ($len > $max_length && $max_length < INF) {
+          return "Mesajul trebuie să fie alcătuit din maxim {$max_length} caractere";
+      }
+
+      return "";
+  }
+
+  $name = $_POST['name'];
+  $msg = $_POST['feedback'];
+  $_SESSION['name'] = $name;
+  $_SESSION['feedback'] = $msg;
+
+  unset($_SESSION['name_error']);
+  unset($_SESSION['feedback_error']);
+
+  $err = validate_name($name, 1, 100);
+  if (strlen($err)>0) {
+      $_SESSION['name_error'] = $err;
+  }
+
+  $err = validate_feedback($msg, max_length:512);
+  if (strlen($err)>0) {
+      $_SESSION['feedback_error'] = $err;
+  }
+
+  if (!isset($_SESSION['name_error']) && !isset($_SESSION['feedback_error'])) {
+      $_SESSION['success_msg'] = "Mesajul a fost înregistrat. Vă mulțumim!";
+      unset($_SESSION['name']);
+      unset($_SESSION['feedback']);
+  }
+
+  header("Location: index.php");
+  ?>
+#+end_src
+
+** styles.css
+
+#+begin_src css
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+  }
+
+  header {
+      background-color: #00ccff;
+      color: #fff;
+      padding: 1rem 0;
+  }
+
+  nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+  }
+
+  nav ul li {
+      margin: 0 1rem;
+  }
+
+  nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+  }
+
+  form h1 {
+      margin-block: 0.67em;
+      font-size: 2em;
+      text-align: center;
+  }
+
+  form > div {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem 2rem;
+  }
+
+  .success-msg{
+      text-align: center;
+      background-color: seagreen;
+      color: antiquewhite;
+      padding: 15px 0px;
+      margin: 15px 30px;
+  }
+
+  span.error{
+      color:indianred;
+      font-size: smaller;
+  }
+
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem 1rem;
+  }
+
+  .card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .card h2, .card p {
+      padding: 1rem;
+  }
+
+  footer {
+      background-color: #00ccff;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+  }
+
+  @media screen and (max-width: 449px){
+      nav ul {
+          flex-direction: column;
+          text-align: center;
+      }
+  }
+
+  @media screen and (min-width: 768px){
+      .cards {
+          flex-direction: row;
+          align-items: center;
+      }
+  }
+#+end_src
+
+* Instrucțiuni Docker
+
+Pentru a rula codul folosind o imagine =Docker=, mai întâi navigați în directorul în care ați salvat fișierele de mai sus și rulați comanda următoare:
+
+#+begin_src shell
+  docker run -d -p 8081:80 --name lab-tw -v "$PWD":/var/www/html php:8.2-apache
+#+end_src
+
+La sfârșit, opriți containerul folosind comanda = docker stop lab-tw=. Pentru a elimina containerul executați comanda =docker rm lab-tw=.

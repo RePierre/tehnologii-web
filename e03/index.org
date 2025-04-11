@@ -136,3 +136,5 @@ La sfârșit, opriți containerul folosind comanda = docker stop lab-tw=. Pentru
 + Adăugați un formular de feedback în pagină cu următoarele câmpuri: nume și mesaj.
 + Implementați validarea datelor în =register-feedback.php=
 + Dacă datele sunt valide, redirecționați clientul către =index.php=
+
+* [[./r/][Rezolvare]]

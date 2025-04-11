@@ -72,8 +72,10 @@
 :END:
 
 - Recapitulare curs
-- [[./e03/][Formulare în PHP]]
 - Post-Redirect-Get
+- Formulare în PHP
+  - [[./e03/][exercițiu]]
+  - [[./e03/r/][(o posibilă) rezolvare]]
 
 * Proiecte
 :PROPERTIES:
