@@ -84,7 +84,7 @@
 ** Preambul
 
 - Consultați [[https://edu.info.uaic.ro/web-technologies/web-projects.html][cerințele și recomandările]] de pe pagina cursului.
-- Înscrierea echipelor și proiectelor se va face printr-un formular; acesta va fi disponibil începând de sâmbătă, 12 aprilie 2025.
+- Alegerea proiectului se face pe principiul primul venit --- primul servit; dacă
 - *Termenul-limită pentru înscrieri este 25 aprilie 2025, ora 23:59*.
 
 ** Propuneri proiecte
@@ -130,6 +130,26 @@ Se dorește crearea unei aplicații Web care permite specificarea adnotărilor t
 :END:
 
 Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articolelor esențiale și consumabilelor (e.g., becuri, lemne pentru foc, condimente, toner, cosmetice, pahare de unică folosință, pioneze, medicamente de uz general, ...), plus a pieselor de schimb pentru diverse dispozitive -- de exemplu, aparate electr(on)ice, automobile, ascensoare etc. -- dintr-o gospodărie, organizație sau întreprindere. Instrumentul va fi capabil să notifice, periodic sau la date fixe (eventual, prestabilite), utilizatorul sau un grup de utilizatori în ceea ce privește epuizarea iminentă a unor materiale sau verificarea anumitor echipamente și angrenaje. Aceste notificări vor fi semnalate atât direct în cadrul interfeței aplicației, cât și prin poșta electronică. Se vor oferi posibilități de importare/exportare a datelor in formatele CSV, JSON și XML, iar diversele statistici generate vor putea fi consultate sub formă de documente HTML si PDF.
+
+** Înscrieri
+
+Pentru a alege proiectul completați [[https://docs.google.com/forms/d/e/1FAIpQLSf0cWPlpZuoWzTWaKnXWfhBWc0X0K7OqOE32CYSnkkOBUjbWg/viewform?usp=header][formularul]] afișat mai jos.
+
+#+begin_export html
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0cWPlpZuoWzTWaKnXWfhBWc0X0K7OqOE32CYSnkkOBUjbWg/viewform?embedded=true"
+	width="640" height="1450" frameborder="0"
+	marginheight="0" marginwidth="0">Se încarcă…
+</iframe>
+  #+end_export
+
+** [[https://docs.google.com/spreadsheets/d/e/2PACX-1vTthM3EjJaSZ8BS72EfrV31DKlZp0eWJPMHT-RP2-_m-JGRkbeegaiBUf_EXj6-BnQ0TDmYQGzhCWec/pubhtml?gid=1971475471&single=true][Statistici]]
+
+#+begin_export html
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTthM3EjJaSZ8BS72EfrV31DKlZp0eWJPMHT-RP2-_m-JGRkbeegaiBUf_EXj6-BnQ0TDmYQGzhCWec/pubhtml?gid=1971475471&amp;single=true&amp;widget=true&amp;headers=false"
+	width="370" height="225">
+</iframe>
+<br style="margin: 15px 0px;">
+#+end_export
 
 * Întrebări frecvente
 :PROPERTIES:
