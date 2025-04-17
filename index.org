@@ -82,12 +82,18 @@
 :CUSTOM_ID: proiecte
 :END:
 ** Preambul
+:PROPERTIES:
+:CUSTOM_ID: preambul
+:END:
 
 - Consultați [[https://edu.info.uaic.ro/web-technologies/web-projects.html][cerințele și recomandările]] de pe pagina cursului.
 - Alegerea proiectului se face pe principiul primul venit --- primul servit; dacă
 - *Termenul-limită pentru înscrieri este 25 aprilie 2025, ora 23:59*.
 
 ** Propuneri proiecte
+:PROPERTIES:
+:CUSTOM_ID: propuneri
+:END:
 *** =DeW= --- Device Web Recommender
 :PROPERTIES:
 :CUSTOM_ID: dew
@@ -96,11 +102,15 @@
 Realizați o aplicație Web care recomanda utilizatorilor autentificați sau nu diverse dispozitive electronice (telefoane, tablete, ceasuri, drone,...) în funcție de preț ori alte caracteristici – e.g., model similar, facilități, culoare, autonomie etc. Datele analizate vor fi preluate din surse multiple (fluxuri de știri, API-uri disponibile, via scraping) oferite de situri de profil ce vor putea fi precizate de utilizator. Statisticile celor mai populare produse și recomandările generate vor fi disponibile și sub formă de fluxuri de știri RSS. Bonus: functionalitățile principale vor fi oferite de o extensie de navigator Web.
 
 **** Echipe:
+:PROPERTIES:
+:CUSTOM_ID: echipe-dew
+:END:
 
 1. Cezar si Alessio
 2. Vulevales
 3. Booldogs
 4. RD
+5. Matei si Razvan
 
 *** =AMa= --- Abbreviation Management
 :PROPERTIES:
@@ -110,11 +120,15 @@ Realizați o aplicație Web care recomanda utilizatorilor autentificați sau nu 
 Să se dezvolte o aplicație Web pentru managementul – e.g., explorare, vizualizare, specificare, memorare permanentă – de abrevieri cu semnificații multiple, în diverse limbi. Pe baza facilităților de căutare multi-criterială implementate, utilizatorii autentificați vor putea crea, inventaria și partaja informații despre abrevieri în funcție de diverse caracteristici (limbă, domeniu, dată etc.). Intern, informațiile referitoare la abrevieri vor fi stocate recurgând la [[https://docbook.org/][DocBook]]. Suplimentar, se va oferi suport pentru export (d)in formate precum HTML (e.g., <dt><dd>) și Markdown. Se vor genera statistici diverse ce pot fi exportate în formate deschise – minimal, CSV si PDF. Se va crea, de asemenea, un clasament al celor mai accesate abrevieri, disponibil și ca flux de date RSS.
 
 **** Echipe:
+:PROPERTIES:
+:CUSTOM_ID: echipe-ama
+:END:
 
 1. AMazing Team
 2. WebWitches
 3. Team TR
 4. LexicHacks
+5. Lemnarii
 
 *** =GoH= --- The Game of SuperHeroes
 :PROPERTIES:
@@ -124,12 +138,17 @@ Să se dezvolte o aplicație Web pentru managementul – e.g., explorare, vizual
 Pe baza [[https://www.kaggle.com/fivethirtyeight/fivethirtyeight-comic-characters-dataset][datelor despre super-eroi]], să se creeze un joc Web educativ – cu scenariu, niveluri de dificulate, miză și condiții de victorie/înfrângere stabilite de echipă – destinat adolescentilor. Clasamentul celor mai buni jucatori va fi disponibil și ca flux RSS. Este necesară implementarea aspectelor precum [[https://www.w3.org/standards/webdesign/i18n][internaționalizarea]] și [[https://www.w3.org/WAI/fundamentals/accessibility-intro/][accesibilitatea]].
 
 **** Echipe:
+:PROPERTIES:
+:CUSTOM_ID: echipe-goh
+:END:
 
 1. Double Trouble
 2. nullpointer
 3. FBB3
 4. Madri
 5. Manjescu_Racu
+6. DICE
+7. ComboNaru
 
 *** =WoW= --- Workout Web Generator
 :PROPERTIES:
@@ -140,6 +159,9 @@ Să se creeze o aplicație Web ce le propune utilizatorilor diverse tipuri de an
 
 
 **** Echipe:
+:PROPERTIES:
+:CUSTOM_ID: echipe-wow
+:END:
 
 1. Saga Gym 1804
 2. Matei-Dumitru
@@ -157,6 +179,9 @@ Să se creeze o aplicație Web ce le propune utilizatorilor diverse tipuri de an
 Se dorește crearea unei aplicații Web care permite specificarea adnotărilor textuale și a meta-datelor, plus exprimarea opiniilor vizând conținuturi (multi)media – de exemplu, imagini și/sau video-clipuri – realizate de o persoană sau grup de persoane. Sistemul va realiza managementul acesor conținuturi, inclusiv organizarea lor pe diverse criterii: categorie, an al realizării, legături cu alte resurse înrudite etc. Se vor oferi statistici textuale și grafice exportate în formate deschise – minimal, CSV și SVG, respectiv. Diversele anunțuri (o persoană a comentat un video-clip, a apărut o altă listă de filme de interes, modificarea clasamentului celor mai apreciate imagini ale lunii etc.) vor fi expuse ca flux de știr RSS. Listele de filme preferate vor fi importate/exportate (d)in formate precum JSON și XML. Bonus: recurgerea la un serviciu online (DailyMotion, Vimeo, Instagram, Unsplash).
 
 **** Echipe:
+:PROPERTIES:
+:CUSTOM_ID: echipe-mer
+:END:
 
 1. PHPrisoners
 2. Supernova
@@ -171,6 +196,9 @@ Se dorește crearea unei aplicații Web care permite specificarea adnotărilor t
 Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articolelor esențiale și consumabilelor (e.g., becuri, lemne pentru foc, condimente, toner, cosmetice, pahare de unică folosință, pioneze, medicamente de uz general, ...), plus a pieselor de schimb pentru diverse dispozitive -- de exemplu, aparate electr(on)ice, automobile, ascensoare etc. -- dintr-o gospodărie, organizație sau întreprindere. Instrumentul va fi capabil să notifice, periodic sau la date fixe (eventual, prestabilite), utilizatorul sau un grup de utilizatori în ceea ce privește epuizarea iminentă a unor materiale sau verificarea anumitor echipamente și angrenaje. Aceste notificări vor fi semnalate atât direct în cadrul interfeței aplicației, cât și prin poșta electronică. Se vor oferi posibilități de importare/exportare a datelor in formatele CSV, JSON și XML, iar diversele statistici generate vor putea fi consultate sub formă de documente HTML si PDF.
 
 **** Echipe:
+:PROPERTIES:
+:CUSTOM_ID: echipe-rew
+:END:
 1. CosMat+-
 2. T'n'T
 3. Matrix
@@ -180,6 +208,9 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 7. RI
 
 ** Înscrieri
+:PROPERTIES:
+:CUSTOM_ID: formular
+:END:
 
 Pentru a alege proiectul completați [[https://docs.google.com/forms/d/e/1FAIpQLSf0cWPlpZuoWzTWaKnXWfhBWc0X0K7OqOE32CYSnkkOBUjbWg/viewform?usp=header][formularul]] afișat mai jos.
 
@@ -191,6 +222,9 @@ Pentru a alege proiectul completați [[https://docs.google.com/forms/d/e/1FAIpQL
   #+end_export
 
 ** [[https://docs.google.com/spreadsheets/d/e/2PACX-1vTthM3EjJaSZ8BS72EfrV31DKlZp0eWJPMHT-RP2-_m-JGRkbeegaiBUf_EXj6-BnQ0TDmYQGzhCWec/pubhtml?gid=1971475471&single=true][Statistici]]
+:PROPERTIES:
+:CUSTOM_ID: statistici
+:END:
 
 #+begin_export html
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTthM3EjJaSZ8BS72EfrV31DKlZp0eWJPMHT-RP2-_m-JGRkbeegaiBUf_EXj6-BnQ0TDmYQGzhCWec/pubhtml?gid=1971475471&amp;single=true&amp;widget=true&amp;headers=false"
