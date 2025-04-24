@@ -88,7 +88,7 @@
 
 - Consultați [[https://edu.info.uaic.ro/web-technologies/web-projects.html][cerințele și recomandările]] de pe pagina cursului.
 - Alegerea proiectului se face pe principiul primul venit --- primul servit; dacă
-- *Termenul-limită pentru înscrieri este 25 aprilie 2025, ora 23:59*.
+- *Termenul-limită pentru înscrieri este +25 aprilie+ 30 aprilie 2025, ora 23:59*.
 
 ** Propuneri proiecte
 :PROPERTIES:
