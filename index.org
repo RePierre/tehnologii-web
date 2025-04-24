@@ -111,6 +111,7 @@ Realizați o aplicație Web care recomanda utilizatorilor autentificați sau nu 
 3. Booldogs
 4. RD
 5. Matei si Razvan
+6. MuscG
 
 *** =AMa= --- Abbreviation Management
 :PROPERTIES:
@@ -129,6 +130,8 @@ Să se dezvolte o aplicație Web pentru managementul – e.g., explorare, vizual
 3. Team TR
 4. LexicHacks
 5. Lemnarii
+6. Deforestators
+7. Aston Villa
 
 *** =GoH= --- The Game of SuperHeroes
 :PROPERTIES:
