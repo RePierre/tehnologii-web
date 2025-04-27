@@ -112,6 +112,7 @@ Realizați o aplicație Web care recomanda utilizatorilor autentificați sau nu 
 4. RD
 5. Matei si Razvan
 6. MuscG
+7. Fabian - Stefan
 
 *** =AMa= --- Abbreviation Management
 :PROPERTIES:
