@@ -191,6 +191,7 @@ Se dorește crearea unei aplicații Web care permite specificarea adnotărilor t
 2. Supernova
 3. Langa Donia Team
 4. Puiky
+5. M4CSL
 
 *** =ReW= --- Resource Web Planner
 :PROPERTIES:
