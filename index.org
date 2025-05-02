@@ -87,7 +87,7 @@
 :END:
 
 - Consultați [[https://edu.info.uaic.ro/web-technologies/web-projects.html][cerințele și recomandările]] de pe pagina cursului.
-- Alegerea proiectului se face pe principiul primul venit --- primul servit; dacă
+- Alegerea proiectului se face pe principiul primul venit --- primul servit;
 - *Termenul-limită pentru înscrieri este +25 aprilie+ 30 aprilie 2025, ora 23:59*.
 
 ** Propuneri proiecte
@@ -211,32 +211,6 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 5. Stan si Bran
 6. Nume Echipa
 7. RI
-
-** Înscrieri
-:PROPERTIES:
-:CUSTOM_ID: formular
-:END:
-
-Pentru a alege proiectul completați [[https://docs.google.com/forms/d/e/1FAIpQLSf0cWPlpZuoWzTWaKnXWfhBWc0X0K7OqOE32CYSnkkOBUjbWg/viewform?usp=header][formularul]] afișat mai jos.
-
-#+begin_export html
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf0cWPlpZuoWzTWaKnXWfhBWc0X0K7OqOE32CYSnkkOBUjbWg/viewform?embedded=true"
-	width="640" height="1450" frameborder="0"
-	marginheight="0" marginwidth="0">Se încarcă…
-</iframe>
-  #+end_export
-
-** [[https://docs.google.com/spreadsheets/d/e/2PACX-1vTthM3EjJaSZ8BS72EfrV31DKlZp0eWJPMHT-RP2-_m-JGRkbeegaiBUf_EXj6-BnQ0TDmYQGzhCWec/pubhtml?gid=1971475471&single=true][Statistici]]
-:PROPERTIES:
-:CUSTOM_ID: statistici
-:END:
-
-#+begin_export html
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTthM3EjJaSZ8BS72EfrV31DKlZp0eWJPMHT-RP2-_m-JGRkbeegaiBUf_EXj6-BnQ0TDmYQGzhCWec/pubhtml?gid=1971475471&amp;single=true&amp;widget=true&amp;headers=false"
-	width="370" height="225">
-</iframe>
-<br style="margin: 15px 0px;">
-#+end_export
 
 * Întrebări frecvente
 :PROPERTIES:
