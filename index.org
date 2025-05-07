@@ -77,6 +77,30 @@
   - [[./e03/][exercițiu]]
   - [[./e03/r/][(o posibilă) rezolvare]]
 
+* Săptămâna 8
+:PROPERTIES:
+:CUSTOM_ID: s08
+:END:
+
+- Lucrul la proiect
+
+* Săptămâna 9
+:PROPERTIES:
+:CUSTOM_ID: s09
+:END:
+
+- Recapitulare curs
+- Lucrul la proiect
+
+* Săptămâna 10
+:PROPERTIES:
+:CUSTOM_ID: s10
+:END:
+
+- Recapitulare curs
+- Programare Web în PHP
+- Lucrul la proiect
+
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
