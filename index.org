@@ -101,6 +101,16 @@
 - Programare Web în PHP
 - Lucrul la proiect
 
+* Săptămâna 11
+:PROPERTIES:
+:CUSTOM_ID: s11
+:END:
+
+- Recapitulare curs
+- Programare Web în PHP
+- Pregătirea mediului de instalare a aplicației
+- Lucrul la proiect
+
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
