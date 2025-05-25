@@ -111,6 +111,16 @@
 - Pregătirea mediului de instalare a aplicației
 - Lucrul la proiect
 
+* Săptămâna 12
+:PROPERTIES:
+:CUSTOM_ID: s12
+:END:
+
+- Recapitulare curs
+- Programare Web în PHP
+- Instalarea automată a aplicației (continuous deployment)
+- Lucrul la proiect
+
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
