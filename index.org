@@ -118,7 +118,7 @@
 
 - Recapitulare curs
 - Programare Web în PHP
-- Instalarea automată a aplicației (continuous deployment)
+- [[./e04/][Instalarea automată a aplicației]]
 - Lucrul la proiect
 
 * Proiecte

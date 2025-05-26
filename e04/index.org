@@ -1,0 +1,129 @@
+#+title: Instalarea automată a aplicației
+#+author: Petru Rebeja
+#+email: petru.rebeja@gmail.com
+#+language: ro
+#+select_tags: export
+#+startup: content
+#+exclude_tags: noexport
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: timestamp:nil title:t toc:t todo:t |:t
+#+options: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+setupfile: ../theme-readtheorg.setup
+#+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
+
+* Introducere
+
+Acest exercițiu are ca scop crearea unui flux de lucru automat pentru instalarea automată a aplicației dezvoltate în cadrul proiectului de curs. Fluxul de lucru se va declanșa de fiecare dată când ramura principală a depozitului de cod pentru proiect va fi actualizată și va actualiza aplicația instalată pe un calculator (mașină virtuală) la distanță. Această practică este cunoscută în ingineria software drept =continuous deployment=, care este [[https://www.ibm.com/think/topics/continuous-deployment][următorul pas]] al procesului numit =continuous delivery=.
+
+Vom implementa acest exercițiu pe parcursul a două laboratoare. În primul laborator vom crea și configura mașina virtuală pe care să instalăm aplicația și vom crea un fișier =Makefile= pentru a automatiza procesul de actualizare. În laboratorul al doilea vom configura un flux de lucru care să declanșeze automat actualizarea aplicației.
+
+* Configurarea mașinii virtuale
+
+** Crearea unei perechi de chei pentru autentificare
+
+Instalarea aplicației se va face printr-o conexiune =ssh= la mașina-destinație. Pentru a automatiza instalarea vom avea nevoie de o pereche de chei de autentificare, care poate fi creată rulând următoarea comandă
+
+#+begin_src sh
+  ssh-keygen -t rsa -f /var/tmp/app_key -N ''
+#+end_src
+
+unde:
+- =-t= specifică tipul cheii --- =RSA= în cazul de față,
+- =-f= specifică numele fișierului care va conține cheia privată; cheia publică va avea același nume plus extensia =.pub=,
+- =-N= specifică parola de acces la cheie; în cazul de față îi semnalăm programului că nu avem nevoie de parolă de acces.
+
+*Atenție*: Pentru a rula comanda de mai sus pe sistemul de operare Windows, trebuie să activați [[https://learn.microsoft.com/en-us/windows/wsl/install][=Windows Subsystem for Linux=]], sau să instalați aplicația [[https://git-scm.com/downloads][=git=]]. După ce ați instalat una dintre aplicațiile de mai sus, executați comanda =ssh-keygen= în consola aplicației respective.
+
+** Crearea unei mașini virtuale
+
+În cadrul acestui exercițiu vom instala aplicația pe o mașină virtuală creată în mediul [[https://azure.microsoft.com/en-us/][Azure]]. Prin urmare, pașii din această secțiune se referă strict la această platformă. Dacă preferați o altă platformă pentru crearea unei mașini virtuale, consultați documentația platformei respective pentru crearea unei mașini virtuale.
+
+1. Accesați https://portal.azure.com și autentificați-vă folosind numele de utilizator și parola pe care le-ați introdus la crearea contului; dacă nu aveți cont --- creați un cont nou.
+2. În caseta de căutare din partea de sus a paginii introduceți =Resource groups= și selectați intrarea cu același nume din grupul =Services= al rezultatelor căutării. Aplicația vă va prezenta pagina pentru gestiunea grupelor de resurse.
+3. Pe pagina de gestiune a grupelor de resurse apăsați butonul =Create= care va încărca pagina de creare a unui grup de resurse nou. În pagina de creare introduceți un nume sugestiv pentru grupul de resurse (de exemplu: /tehnologii-web/), apăsați butonul =Review + create=, apoi apăsați butonul =Create=. Aplicația va deschide pagina care afișează toate grupurile de resurse. În această pagină, dați click pe grupul de resurse proaspăt creat. Această acțiune va deschide pagina pentru gestiunea grupului de resurse selectat.
+4. În pagina de gestiune a grupului de resurse dați click pe butonul =Create resources= --- aplicația va deschide pagina de selecție a resurselor disponibile.
+5. Pe pagina de selecție a resurselor disponibile identificați caseta de căutare și introduceți =Debian 12=, apoi apăsați =Enter=.
+6. Din rezultatele căutării selectați =Debian 12 "Bookworm"= --- aplicația va încărca pagina mașinii virtuale. În această pagină dați click pe butonul =Create= pentru a accesa pagina de configurare a mașinii virtuale.
+7. În pagina de configurare a mașinii virtuale:
+   1. Selectați grupul de resurse creat anterior pentru caseta =Resource group=
+   2. Dați un nume sugestiv mașinii virtuale în caseta =Virtual machine name= (de exemplu: /vm-debian/).
+   3. Selectați /SSH/ la secțiunea =Authentication type=.
+   4. În caseta =Username= introduceți un nume pentru contul de utilizator folosit pentru instalarea aplicației. Pentru acest exercițiu vom folosi valoarea implicită /azureuser/.
+   5. La secțiunea =SSH public key source= selectați /Use existing public key/.
+   6. Deschideți într-un editor text cheia publică pe care ați creat-o în secțiunea anterioară (fișierul cu extensia =.pub=) și copiați conținutul fișierului în caseta de la secțiunea =SSH public key=.
+   7. Selectați /Allow selected ports/ la secțiunea =Public inbound ports=.
+   8. La secțiunea =Select inbound ports= bifați intrările pentru porturile /SSH/, /HTTP/ și /HTTPS/.
+   9. Dați click pe butonul =Review + create=, apoi pe butonul =Create= și așteptați până ce primiți notificarea că mașina a fost creată.
+8. După ce primiți notificarea, dați click pe butonul =Go to resource= pentru a naviga pe pagina de administrare a mașinii virtuale.
+9. Opțional: Pe pagina de administrare a mașinii virtuale, la secțiunea =Essentials= va apărea intrarea =DNS name: Not configured=; dați click pe =Not configured= și în pagina următoare introduceți un nume sugestiv în caseta =DNS name label= (de exemplu: /app-tw/). Acest nume vă va permite să accesați aplicația pe baza unui nume de domeniu în loc de adrea IP. În cazul de față numele de domeniu va fi /app-tw.westeurope.cloudapp.azure.com/.
+      Dacă nu doriți să configurați un nume de domeniu, vă puteți conecta la mașina virtuală folosind adresa IP.
+
+După ce ați creat mașina virtuală verificați că vă puteți conecta la aceasta rulând următoarea comandă (înlocuiți =/var/tmp/app_key= și =azureuser@app-tw.westeurope.cloudapp.azure.com= cu valorile specifice pentru mașina virtuală creată de voi):
+
+#+begin_src sh
+  ssh -i /var/tmp/app_key azureuser@app-tw.westeurope.cloudapp.azure.com
+#+end_src
+
+** Pregătirea mediului de execuție pe mașina virtuală
+
+Instalarea automată a unei aplicații =PHP= presupune execuția a minim doi pași:
+1. Descărcarea celei mai recente versiuni a codului-sursă
+2. Executarea unui script pentru actualizare.
+
+Deoarece scopul acestui exercițiu este exemplificarea unui proces de actualizare, descărcarea celei mai recente versiuni a codului-sursă se va face folosind comanda =git pull=, iar execuția aplicației se va face prin intermediul aplicației =podman= folosită la laboratoarele anterioare.
+
+Însă, chiar și acest minim de pași necesită configurarea mașinii virtuale. Pentru a configura mașina virtuală trebuie să vă conectați la ea rulând următoarea comandă (înlocuiți =/var/tmp/app_key= și =azureuser@app-tw.westeurope.cloudapp.azure.com= cu valorile specifice pentru mașina virtuală creată de voi):
+
+#+begin_src sh
+  ssh -i /var/tmp/app_key azureuser@app-tw.westeurope.cloudapp.azure.com
+#+end_src
+
+După ce v-ați conectat la mașina virtuală:
+1. Actualizați sistemul de operare rulând comanda =sudo apt update -y=.
+2. Instalați aplicațiile necesare rulând comanda =sudo apt install -y git make podman=.
+3. Descărcați depozitul de cod al aplicației voastre folosind comanda (înlocuiți /url/ cu adresa depozitului vostru de cod) =git clone <url>=.
+
+La sfârșit, deconectați-vă de la mașina virtuală executând comanda =logout= sau apăsând simultan tastele =Ctrl= și =d=.
+
+* Crearea unui fișier =Makefile= pentru automatizarea actualizării
+
+Pe calculatorul personal, navigați în directorul care reprezintă rădăcina depozitului de cod al aplicației voastre. În acest director, creați un fișier numit =Makefile= (fără extensie).
+
+Fișierul =Makefile= conține „rețete” pentru automatizarea proceselor necesare compilării și asamblării aplicațiilor --- pentru mai multe detalii consultați [[https://www.gnu.org/software/make/manual/html_node/Introduction.html][documentația]]. În cazul nostru, acest fișier ne va facilita procesul de actualizare permițându-ne să executăm prin invocarea unei singure comenzi o secvență de comenzi.
+
+Astfel, pentru a automatiza actualizarea aplicației:
+1. Deschideți fișierul =Makefile= într-un editor text și introduceți următorul conținut:
+   #+begin_src makefile
+     APP_CONTAINER	= app-tw
+     APP_PATH	= $(shell pwd)
+
+     .PHONY: update
+     update:
+             if [ "$(shell podman ps -q -f name=$(APP_CONTAINER))" ]; then \
+                     podman stop $(APP_CONTAINER); \
+                     podman rm $(APP_CONTAINER); \
+             fi
+             podman run -d -p 80:80 --name $(APP_CONTAINER) -v $(APP_PATH):/var/www/html php:8.2-apache;
+
+
+   #+end_src
+   Conținutul de mai sus creează o „rețetă” nouă numită =update= care:
+   - verifică dacă există un container numit =app-tw= (valoare stocată în variabila =APP_CONTAINER=) și dacă un astfel de container exstă atunci:
+     - oprește containerul --- =podman stop $(APP_CONTAINER);=
+     - șterge containerul --- =podman rm $(APP_CONTAINER);=
+   - creează și rulează un container nou bazat pe imaginea =php:8.2-apache= cu parametrii discutați în [[../e02/][exercițiul anterior]].
+2. Adăugați fișierul =Makefile= la depozitul de cod folosind comanda =git add Makefile && git commit -m "Added Makefile"=, apoi trimiteți modificările pe server folosind comanda =git push origin=.
+3. Conectați-vă la mașina virtuală creată anterior.
+4. După ce v-ați conectat la mașină, navigați în directorul care conține depozitul de cod al aplicației voastre și rulați comanda =git pull=. Această comandă va descărca și fișierul =Makefile= proaspăt-adăugat.
+5. După actualizaea codului-sursă, rulați comanda =make update=. Această comandă va executa „rețeta” numită =update= pe care am definit-o în fișierul =Makefile=. La rândul ei, această „rețetă” va executa pe rând toate comenzile care o alcătuiesc, actualizând astfel aplicația la cea mai nouă versiune.
+
+După executarea pașilor de mai sus, deschideți navigatorul Web și introduceți URL-ul/adresa IP a mașinii virtuale --- /app-tw.westeurope.cloudapp.azure.com/ în cazul acestui exemplu; navigatorul ar trebui să afișeze pagina de start a aplicației.
+
+De acum încolo, actualizarea aplicației presupune executarea, în ordine, a pașilor 3---5 definiți mai sus.
+
+* Definirea secretelor pentru depozitul de cod                     :noexport:
+
+* Crearea unui flux de lucru =Github=                              :noexport:
+
+* Instalarea automată                                              :noexport:
