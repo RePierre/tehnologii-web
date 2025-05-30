@@ -121,6 +121,14 @@
 - [[./e04/][Instalarea automată a aplicației]]
 - Lucrul la proiect
 
+* Săptămâna 13
+:PROPERTIES:
+:CUSTOM_ID: s13
+:END:
+
+- [[./e04/][Instalarea automată a aplicației]]
+- Lucrul la proiect
+
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
