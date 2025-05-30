@@ -129,6 +129,17 @@
 - [[./e04/][Instalarea automată a aplicației]]
 - Lucrul la proiect
 
+* Anunțuri
+:PROPERTIES:
+:CUSTOM_ID: avize
+:END:
+
+** Recuperare în avans laboratoare din 5 iunie 2025
+
+Laboratoarele la Tehnologii Web de joi, 5 iunie 2025, nu se vor desfășura conform orarului. Orele de laborator vor fi recuperate în avans astfel:
+- grupa I2B4 va recupera laboratorul luni, 2 iunie 2025, în sala C413 în intervalul orar 8:00 --- 10:00
+- grupa I2A4 va recupera laboratorul luni, 2 iunie 2025, în sala C412 în intervalul orar 18:00 --- 20:00.
+
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
