@@ -129,6 +129,14 @@
 - [[./e04/][Instalarea automată a aplicației]]
 - Lucrul la proiect
 
+* Săptămâna 14
+:PROPERTIES:
+:CUSTOM_ID: s14
+:END:
+
+- Lucrul la proiect
+- Prezentări proiecte
+
 * Anunțuri
 :PROPERTIES:
 :CUSTOM_ID: avize
