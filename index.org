@@ -283,6 +283,104 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 6. Nume Echipa
 7. RI
 
+** Echipe                                                         :noexport:
+
+| Proiect | Echipa                         | Programat |
+|---------+--------------------------------+-----------|
+| DeW     | Vulevales                      |         1 |
+| DeW     | Booldogs                       |         1 |
+| DeW     | RD                             |         1 |
+| DeW     | Matei si Razvan                |         1 |
+| DeW     | MuscG                          |         1 |
+| DeW     | Fabian - Stefan                |         1 |
+| AMa     | AMazing Team                   |         1 |
+| AMa     | WebWitches                     |         1 |
+| AMa     | Team TR                        |         1 |
+| AMa     | LexicHacks                     |         1 |
+| AMa     | Lemnarii                       |         1 |
+| AMa     | Deforestators                  |         1 |
+| AMa     | Aston Villa                    |         1 |
+| GoH     | Double Trouble                 |         1 |
+| GoH     | nullpointer                    |         1 |
+| GoH     | FBB3                           |         1 |
+| GoH     | Madri                          |         1 |
+| GoH     | Manjescu_Racu                  |         1 |
+| GoH     | DICE                           |         1 |
+| GoH     | ComboNaru                      |         1 |
+| WoW     | Saga Gym 1804                  |         1 |
+| WoW     | Matei-Dumitru                  |         1 |
+| WoW     | A^{2}                          |         1 |
+| WoW     | Spartacus                      |         1 |
+| WoW     | Cucu-Rotaru                    |         1 |
+| WoW     | LorenaDeea                     |         1 |
+| WoW     | NecTwins                       |         1 |
+| MeR     | PHPrisoners                    |         1 |
+| MeR     | Supernova                      |         1 |
+| MeR     | M4CSL                          |         1 |
+| ReW     | CosMat+-                       |         1 |
+| ReW     | T'n'T                          |         1 |
+| ReW     | Matrix                         |         1 |
+| ReW     | Anitei Sebi si Filote Beatrice |         1 |
+| ReW     | Stan si Bran                   |         1 |
+| ReW     | RI                             |         1 |
+
+** Programare prezentări
+:PROPERTIES:
+:CUSTOM_ID: prezentari
+:END:
+
+| Data          | Sala | Interval orar  | Echipa                         |
+|---------------+------+----------------+--------------------------------|
+| 24 iunie 2025 | -    | 18:00 -- 18:20 | Double Trouble                 |
+| 24 iunie 2025 | -    | 18:20 -- 18:40 | ComboNaru                      |
+| 24 iunie 2025 | -    | 18:40 -- 19:00 | nullpointer                    |
+| 24 iunie 2025 | -    | 19:00 -- 19:20 | Madri                          |
+| 24 iunie 2025 | -    | 19:20 -- 19:40 | DICE                           |
+| 24 iunie 2025 | -    | 19:40 -- 20:00 | FBB3                           |
+|---------------+------+----------------+--------------------------------|
+|---------------+------+----------------+--------------------------------|
+| 25 iunie 2025 | -    | 18:00 -- 18:20 | Manjescu_Racu                  |
+| 25 iunie 2025 | -    | 18:20 -- 18:40 | Supernova                      |
+| 25 iunie 2025 | -    | 18:40 -- 19:00 | M4CSL                          |
+| 25 iunie 2025 | -    | 19:00 -- 19:20 | PHPrisoners                    |
+| 25 iunie 2025 | -    | 19:20 -- 19:40 | RD                             |
+| 25 iunie 2025 | -    | 19:40 -- 20:00 | Matei si Razvan                |
+|---------------+------+----------------+--------------------------------|
+|---------------+------+----------------+--------------------------------|
+| 26 iunie 2025 | -    | 18:00 -- 18:20 | Vulevales                      |
+| 26 iunie 2025 | -    | 18:20 -- 18:40 | MuscG                          |
+| 26 iunie 2025 | -    | 18:40 -- 19:00 | Booldogs                       |
+| 26 iunie 2025 | -    | 19:00 -- 19:20 | Fabian - Stefan                |
+| 26 iunie 2025 | -    | 19:20 -- 19:40 | AMazing Team                   |
+| 26 iunie 2025 | -    | 19:40 -- 20:00 | Lemnarii                       |
+|---------------+------+----------------+--------------------------------|
+|---------------+------+----------------+--------------------------------|
+| 27 iunie 2025 | -    | 18:00 -- 18:20 | Deforestators                  |
+| 27 iunie 2025 | -    | 18:20 -- 18:40 | WebWitches                     |
+| 27 iunie 2025 | -    | 18:40 -- 19:00 | Aston Villa                    |
+| 27 iunie 2025 | -    | 19:00 -- 19:20 | LexicHacks                     |
+| 27 iunie 2025 | -    | 19:20 -- 19:40 | Team TR                        |
+| 27 iunie 2025 | -    | 19:40 -- 20:00 | RI                             |
+|---------------+------+----------------+--------------------------------|
+|---------------+------+----------------+--------------------------------|
+| 28 iunie 2025 | -    | 09:00 -- 09:20 | CosMat+-                       |
+| 28 iunie 2025 | -    | 09:20 -- 09:40 | Matrix                         |
+| 28 iunie 2025 | -    | 09:40 -- 10:00 | Anitei Sebi si Filote Beatrice |
+| 28 iunie 2025 | -    | 10:00 -- 10:20 | T'n'T                          |
+| 28 iunie 2025 | -    | 10:20 -- 10:40 | Stan si Bran                   |
+| 28 iunie 2025 | -    | 10:40 -- 11:00 | LorenaDeea                     |
+| 28 iunie 2025 | -    | 11:00 -- 11:20 | Matei-Dumitru                  |
+| 28 iunie 2025 | -    | 11:20 -- 11:40 | Cucu-Rotaru                    |
+| 28 iunie 2025 | -    | 11:40 -- 12:00 | Saga Gym 1804                  |
+| 28 iunie 2025 | -    | 12:00 -- 12:20 | A^{2}                          |
+| 28 iunie 2025 | -    | 12:20 -- 12:40 | NecTwins                       |
+| 28 iunie 2025 | -    | 12:40 -- 13:00 | Spartacus                      |
+|---------------+------+----------------+--------------------------------|
+
+*Observații*:
+1. Pentru alcătuirea tabelului de programări atât ordinea proiectelor și a echipelor alocate fiecărui proiect a fost aleasă aleator folosind [[https://random.org][random.org]].
+2. Sălile de laborator în care se vor desfășura prezentările vor fi anunțate după validarea de către operatori.
+
 * Întrebări frecvente
 :PROPERTIES:
 :CUSTOM_ID: faq
