@@ -343,7 +343,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 25 iunie 2025 | -    | 18:20 -- 18:40 | Supernova                      |
 | 25 iunie 2025 | -    | 18:40 -- 19:00 | M4CSL                          |
 | 25 iunie 2025 | -    | 19:00 -- 19:20 | PHPrisoners                    |
-| 25 iunie 2025 | -    | 19:20 -- 19:40 | RD                             |
+| 25 iunie 2025 | -    | 19:20 -- 19:40 | Spartacus                      |
 | 25 iunie 2025 | -    | 19:40 -- 20:00 | Matei si Razvan                |
 |---------------+------+----------------+--------------------------------|
 |---------------+------+----------------+--------------------------------|
@@ -374,7 +374,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 28 iunie 2025 | -    | 11:40 -- 12:00 | nullpointer                    |
 | 28 iunie 2025 | -    | 12:00 -- 12:20 | MuscG                          |
 | 28 iunie 2025 | -    | 12:20 -- 12:40 | NecTwins                       |
-| 28 iunie 2025 | -    | 12:40 -- 13:00 | Spartacus                      |
+| 28 iunie 2025 | -    | 12:40 -- 13:00 | RD                             |
 |---------------+------+----------------+--------------------------------|
 
 *Observații*:
