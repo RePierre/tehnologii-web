@@ -348,7 +348,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 |---------------+------+----------------+--------------------------------|
 |---------------+------+----------------+--------------------------------|
 | 26 iunie 2025 | -    | 18:00 -- 18:20 | Vulevales                      |
-| 26 iunie 2025 | -    | 18:20 -- 18:40 | MuscG                          |
+| 26 iunie 2025 | -    | 18:20 -- 18:40 | A^{2}                          |
 | 26 iunie 2025 | -    | 18:40 -- 19:00 | Booldogs                       |
 | 26 iunie 2025 | -    | 19:00 -- 19:20 | Fabian - Stefan                |
 | 26 iunie 2025 | -    | 19:20 -- 19:40 | Double Trouble                 |
@@ -372,7 +372,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 28 iunie 2025 | -    | 11:00 -- 11:20 | Matei-Dumitru                  |
 | 28 iunie 2025 | -    | 11:20 -- 11:40 | Cucu-Rotaru                    |
 | 28 iunie 2025 | -    | 11:40 -- 12:00 | nullpointer                    |
-| 28 iunie 2025 | -    | 12:00 -- 12:20 | A^{2}                          |
+| 28 iunie 2025 | -    | 12:00 -- 12:20 | MuscG                          |
 | 28 iunie 2025 | -    | 12:20 -- 12:40 | NecTwins                       |
 | 28 iunie 2025 | -    | 12:40 -- 13:00 | Spartacus                      |
 |---------------+------+----------------+--------------------------------|
