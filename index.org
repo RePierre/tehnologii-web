@@ -331,7 +331,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 
 | Data          | Sala | Interval orar  | Echipa                         |
 |---------------+------+----------------+--------------------------------|
-| 24 iunie 2025 | -    | 18:00 -- 18:20 | Double Trouble                 |
+| 24 iunie 2025 | -    | 18:00 -- 18:20 | AMazing Team                   |
 | 24 iunie 2025 | -    | 18:20 -- 18:40 | ComboNaru                      |
 | 24 iunie 2025 | -    | 18:40 -- 19:00 | nullpointer                    |
 | 24 iunie 2025 | -    | 19:00 -- 19:20 | Madri                          |
@@ -351,7 +351,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 26 iunie 2025 | -    | 18:20 -- 18:40 | MuscG                          |
 | 26 iunie 2025 | -    | 18:40 -- 19:00 | Booldogs                       |
 | 26 iunie 2025 | -    | 19:00 -- 19:20 | Fabian - Stefan                |
-| 26 iunie 2025 | -    | 19:20 -- 19:40 | AMazing Team                   |
+| 26 iunie 2025 | -    | 19:20 -- 19:40 | Double Trouble                 |
 | 26 iunie 2025 | -    | 19:40 -- 20:00 | Lemnarii                       |
 |---------------+------+----------------+--------------------------------|
 |---------------+------+----------------+--------------------------------|
