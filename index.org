@@ -335,7 +335,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 24 iunie 2025 | C412 | 18:00 -- 18:20 | AMazing Team                   |
 | 24 iunie 2025 | C412 | 18:20 -- 18:40 | ComboNaru                      |
 | 24 iunie 2025 | C412 | 18:40 -- 19:00 | Saga Gym 1804                  |
-| 24 iunie 2025 | C412 | 19:00 -- 19:20 | Madri                          |
+| 24 iunie 2025 | C412 | 19:00 -- 19:20 | Fabian - Stefan                |
 | 24 iunie 2025 | C412 | 19:20 -- 19:40 | DICE                           |
 | 24 iunie 2025 | C412 | 19:40 -- 20:00 | FBB3                           |
 |---------------+------+----------------+--------------------------------|
@@ -351,7 +351,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 26 iunie 2025 | C412 | 18:00 -- 18:20 | Vulevales                      |
 | 26 iunie 2025 | C412 | 18:20 -- 18:40 | A^{2}                          |
 | 26 iunie 2025 | C412 | 18:40 -- 19:00 | Booldogs                       |
-| 26 iunie 2025 | C412 | 19:00 -- 19:20 | Fabian - Stefan                |
+| 26 iunie 2025 | C412 | 19:00 -- 19:20 | Madri                          |
 | 26 iunie 2025 | C412 | 19:20 -- 19:40 | WebWitches                     |
 | 26 iunie 2025 | C412 | 19:40 -- 20:00 | Lemnarii                       |
 |---------------+------+----------------+--------------------------------|
