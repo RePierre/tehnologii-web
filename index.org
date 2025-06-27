@@ -356,26 +356,26 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 26 iunie 2025 | C412 | 19:40 -- 20:00 | Lemnarii                       |
 |---------------+------+----------------+--------------------------------|
 |---------------+------+----------------+--------------------------------|
-| 27 iunie 2025 | C413 | 18:00 -- 18:20 | Deforestators                  |
-| 27 iunie 2025 | C413 | 18:20 -- 18:40 | Double Trouble                 |
-| 27 iunie 2025 | C413 | 18:40 -- 19:00 | Aston Villa                    |
-| 27 iunie 2025 | C413 | 19:00 -- 19:20 | LexicHacks                     |
-| 27 iunie 2025 | C413 | 19:20 -- 19:40 | Team TR                        |
-| 27 iunie 2025 | C413 | 19:40 -- 20:00 | RI                             |
+| 27 iunie 2025 | C412 | 18:00 -- 18:20 | Deforestators                  |
+| 27 iunie 2025 | C412 | 18:20 -- 18:40 | Double Trouble                 |
+| 27 iunie 2025 | C412 | 18:40 -- 19:00 | Aston Villa                    |
+| 27 iunie 2025 | C412 | 19:00 -- 19:20 | LexicHacks                     |
+| 27 iunie 2025 | C412 | 19:20 -- 19:40 | Team TR                        |
+| 27 iunie 2025 | C412 | 19:40 -- 20:00 | RI                             |
 |---------------+------+----------------+--------------------------------|
 |---------------+------+----------------+--------------------------------|
-| 28 iunie 2025 | C413 | 09:00 -- 09:20 | CosMat+-                       |
-| 28 iunie 2025 | C413 | 09:20 -- 09:40 | Matrix                         |
-| 28 iunie 2025 | C413 | 09:40 -- 10:00 | Anitei Sebi si Filote Beatrice |
-| 28 iunie 2025 | C413 | 10:00 -- 10:20 | T'n'T                          |
-| 28 iunie 2025 | C413 | 10:20 -- 10:40 | Stan si Bran                   |
-| 28 iunie 2025 | C413 | 10:40 -- 11:00 | LorenaDeea                     |
-| 28 iunie 2025 | C413 | 11:00 -- 11:20 | Matei-Dumitru                  |
-| 28 iunie 2025 | C413 | 11:20 -- 11:40 | Cucu-Rotaru                    |
-| 28 iunie 2025 | C413 | 11:40 -- 12:00 | nullpointer                    |
-| 28 iunie 2025 | C413 | 12:00 -- 12:20 | MuscG                          |
-| 28 iunie 2025 | C413 | 12:20 -- 12:40 | NecTwins                       |
-| 28 iunie 2025 | C413 | 12:40 -- 13:00 | RD                             |
+| 28 iunie 2025 | C412 | 09:00 -- 09:20 | CosMat+-                       |
+| 28 iunie 2025 | C412 | 09:20 -- 09:40 | Matrix                         |
+| 28 iunie 2025 | C412 | 09:40 -- 10:00 | Anitei Sebi si Filote Beatrice |
+| 28 iunie 2025 | C412 | 10:00 -- 10:20 | T'n'T                          |
+| 28 iunie 2025 | C412 | 10:20 -- 10:40 | Stan si Bran                   |
+| 28 iunie 2025 | C412 | 10:40 -- 11:00 | LorenaDeea                     |
+| 28 iunie 2025 | C412 | 11:00 -- 11:20 | Matei-Dumitru                  |
+| 28 iunie 2025 | C412 | 11:20 -- 11:40 | Cucu-Rotaru                    |
+| 28 iunie 2025 | C412 | 11:40 -- 12:00 | nullpointer                    |
+| 28 iunie 2025 | C412 | 12:00 -- 12:20 | MuscG                          |
+| 28 iunie 2025 | C412 | 12:20 -- 12:40 | NecTwins                       |
+| 28 iunie 2025 | C412 | 12:40 -- 13:00 | RD                             |
 |---------------+------+----------------+--------------------------------|
 
 *Observații*:
