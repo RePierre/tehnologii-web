@@ -370,12 +370,13 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 | 28 iunie 2025 | C412 | 10:00 -- 10:20 | T'n'T                          |
 | 28 iunie 2025 | C412 | 10:20 -- 10:40 | Stan si Bran                   |
 | 28 iunie 2025 | C412 | 10:40 -- 11:00 | LorenaDeea                     |
-| 28 iunie 2025 | C412 | 11:00 -- 11:20 | Matei-Dumitru                  |
-| 28 iunie 2025 | C412 | 11:20 -- 11:40 | Cucu-Rotaru                    |
-| 28 iunie 2025 | C412 | 11:40 -- 12:00 | nullpointer                    |
-| 28 iunie 2025 | C412 | 12:00 -- 12:20 | MuscG                          |
-| 28 iunie 2025 | C412 | 12:20 -- 12:40 | NecTwins                       |
-| 28 iunie 2025 | C412 | 12:40 -- 13:00 | RD                             |
+| 28 iunie 2025 | C412 | 11:00 -- 11:20 | ---                            |
+| 28 iunie 2025 | C412 | 11:20 -- 11:40 | Matei-Dumitru                  |
+| 28 iunie 2025 | C412 | 11:40 -- 12:00 | Cucu-Rotaru                    |
+| 28 iunie 2025 | C412 | 12:00 -- 12:20 | nullpointer                    |
+| 28 iunie 2025 | C412 | 12:20 -- 12:40 | MuscG                          |
+| 28 iunie 2025 | C412 | 12:40 -- 13:00 | NecTwins                       |
+| 28 iunie 2025 | C412 | 13:00 -- 13:20 | RD                             |
 |---------------+------+----------------+--------------------------------|
 
 *Observații*:
