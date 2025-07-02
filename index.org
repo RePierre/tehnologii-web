@@ -397,21 +397,20 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 
 | Data         | Sala | Interval orar  | Echipa                         |
 |--------------+------+----------------+--------------------------------|
-| 2 iulie 2025 | --   | 18:00 -- 18:20 | Vulevales                      |
-| 2 iulie 2025 | --   | 18:20 -- 18:40 | Stan si Bran                   |
-| 2 iulie 2025 | --   | 18:40 -- 19:00 | Anitei Sebi si Filote Beatrice |
-| 2 iulie 2025 | --   | 19:00 -- 19:20 | Manjescu_Racu                  |
-| 2 iulie 2025 | --   | 19:20 -- 19:40 | T'n'T                          |
+| 2 iulie 2025 | C412 | 18:00 -- 18:20 | Vulevales                      |
+| 2 iulie 2025 | C412 | 18:20 -- 18:40 | Stan si Bran                   |
+| 2 iulie 2025 | C412 | 18:40 -- 19:00 | Anitei Sebi si Filote Beatrice |
+| 2 iulie 2025 | C412 | 19:00 -- 19:20 | Manjescu_Racu                  |
+| 2 iulie 2025 | C412 | 19:20 -- 19:40 | T'n'T                          |
 |--------------+------+----------------+--------------------------------|
-| 3 iulie 2025 | --   | 18:00 -- 18:20 | Aston Villa                    |
-| 3 iulie 2025 | --   | 18:20 -- 18:40 | Double Trouble                 |
-| 3 iulie 2025 | --   | 18:40 -- 19:00 | Fabian - Stefan                |
-| 3 iulie 2025 | --   | 19:00 -- 19:20 | Supernova                      |
+| 3 iulie 2025 | C412 | 18:00 -- 18:20 | Aston Villa                    |
+| 3 iulie 2025 | C412 | 18:20 -- 18:40 | Double Trouble                 |
+| 3 iulie 2025 | C412 | 18:40 -- 19:00 | Fabian - Stefan                |
+| 3 iulie 2025 | C412 | 19:00 -- 19:20 | Supernova                      |
 |--------------+------+----------------+--------------------------------|
 
  *Observații*:
 - Ordinea echipelor a fost aleasă aleator folosind [[https://random.org][random.org]].
-- Sălile de laborator vor fi anunțate după validarea de către operatori.
 
 * Întrebări frecvente
 :PROPERTIES:
