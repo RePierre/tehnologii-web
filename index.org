@@ -13,6 +13,16 @@
 #+setupfile: theme-readtheorg.setup
 #+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
 
+
+* Săptămâna 1
+:PROPERTIES:
+:CUSTOM_ID: s01
+:END:
+
+- Aspecte administrative
+- Recapitulare curs
+- Configurarea mediului de lucru
+
 * Anunțuri
 :PROPERTIES:
 :CUSTOM_ID: avize
