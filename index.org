@@ -13,6 +13,15 @@
 #+setupfile: theme-readtheorg.setup
 #+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
 
+* Orar
+:PROPERTIES:
+:CUSTOM_ID: orar
+:END:
+
+| Zi  | Interval       | Disciplină     | Tip       | Studenți  | Sala |
+|-----+----------------+----------------+-----------+-----------+------|
+| Joi | 16:00 -- 18:00 | Tehnologii Web | Laborator | InfoRo2A1 | C405 |
+| Joi | 18:00 -- 20:00 | Tehnologii Web | Laborator | InfoRo2B4 | C405 |
 
 * Săptămâna 1
 :PROPERTIES:
