@@ -28,10 +28,6 @@
 :CUSTOM_ID: avize
 :END:
 
-** Pagină în lucru
-
-Conținutul paginii va fi actualizat în curând.
-
 * Date de contact
   :PROPERTIES:
   :CUSTOM_ID: contact
