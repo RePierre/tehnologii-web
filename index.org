@@ -23,6 +23,11 @@
 | Joi | 16:00 -- 18:00 | Tehnologii Web | Laborator | InfoRo2A1 | C405 |
 | Joi | 18:00 -- 20:00 | Tehnologii Web | Laborator | InfoRo2B4 | C405 |
 
+* Anunțuri
+:PROPERTIES:
+:CUSTOM_ID: avize
+:END:
+
 * Săptămâna 1
 :PROPERTIES:
 :CUSTOM_ID: s01
@@ -31,11 +36,6 @@
 - Aspecte administrative
 - Recapitulare curs
 - Configurarea mediului de lucru
-
-* Anunțuri
-:PROPERTIES:
-:CUSTOM_ID: avize
-:END:
 
 * Date de contact
   :PROPERTIES:
