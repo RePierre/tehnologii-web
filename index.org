@@ -37,6 +37,17 @@
 - Recapitulare curs
 - Configurarea mediului de lucru
 
+* Resurse utile
+:PROPERTIES:
+:CUSTOM_ID: resurse
+:END:
+1. [[https://www.troyhunt.com/10-commandments-of-good-source-control/][The 10 commandments of good source control management]]
+2. [[https://developer.mozilla.org/en-US/docs/Learn][Learn web development | MDN]]
+3. [[https://jsfiddle.net/][JSFiddle - Code Playground]]
+4. [[https://codewithphp.com/][Learn Modern PHP from First Principles | Code with PHP]]
+5. [[https://thecopenhagenbook.com/][The Copenhagen Book]]
+6. [[https://github.com/sindresorhus/awesome#contents][Awesome lists about all kinds of interesting topics]]
+7. [[https://validator.w3.org/][The W3C Markup Validation Service]]
 * Date de contact
   :PROPERTIES:
   :CUSTOM_ID: contact
