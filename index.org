@@ -35,7 +35,7 @@
 
 - Aspecte administrative
 - Recapitulare curs
-- Configurarea mediului de lucru
+- Noțiuni de bază
 
 * Resurse utile
 :PROPERTIES:
