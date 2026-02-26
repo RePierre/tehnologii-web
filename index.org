@@ -37,6 +37,34 @@
 - Recapitulare curs
 - Noțiuni de bază
 
+* Săptămâna 2
+:PROPERTIES:
+:CUSTOM_ID: s02
+:END:
+
+** Recapitulare curs
+
+- arhitectura client-server
+- comunicare HTTP
+
+** HTML + CSS
+
+Separarea conținutului de prezentare în paginile HTML.
+
+*** Exercițiu                                                    :noexport:
+
+
+Creați pagina de contact pentru afacerea proprie; aplicați stiluri CSS pentru a îmbunătăți aspectul paginii.
+
+*Cerințe*:
+1. O singură foaie de stil în pagină.
+2. Pagina trebuie să includă date (fictive) de contact:
+   1. Adresă
+   2. Adresă de e-mail
+   3. Telefon
+   4. Legături la profile de rețele sociale
+3. Pagina trebuie să includă un formular (nefuncțional) de contact
+
 * Resurse utile
 :PROPERTIES:
 :CUSTOM_ID: resurse
