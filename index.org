@@ -82,9 +82,9 @@ Creați pagina de contact pentru afacerea proprie; aplicați stiluri CSS pentru 
 
 Separarea conținutului de prezentare în paginile HTML.
 
-*** Exercițiu                                                      :noexport:
+*** Exercițiu
 
-Continuăm exercițiul de la laboratorul precedent adăugând /elementele semantice/ în pagină.
+Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ în marcajul HTML; aplicați stiluri CSS pentru a îmbunătăți aspectul paginii.
 
 *Cerințe*:
 1. O singură foaie de stil în pagină.
@@ -111,6 +111,7 @@ Continuăm exercițiul de la laboratorul precedent adăugând /elementele semant
 5. [[https://thecopenhagenbook.com/][The Copenhagen Book]]
 6. [[https://github.com/sindresorhus/awesome#contents][Awesome lists about all kinds of interesting topics]]
 7. [[https://validator.w3.org/][The W3C Markup Validation Service]]
+8. [[https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements][Semantic elements in HTML]]
 * Date de contact
   :PROPERTIES:
   :CUSTOM_ID: contact
