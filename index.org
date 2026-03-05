@@ -28,6 +28,10 @@
 :CUSTOM_ID: avize
 :END:
 
+** Apel de participare la studiu --- Percepțiile studenților despre utilizarea IA în procesul educațional
+
+Vă rugăm să completați chestionarul online  „Percepțiile studenților despre utilizarea IA în procesul educațional” la următoarea adresă: https://forms.gle/TcA94EeW7CdvsEzy5.
+
 * Săptămâna 1
 :PROPERTIES:
 :CUSTOM_ID: s01
@@ -64,6 +68,37 @@ Creați pagina de contact pentru afacerea proprie; aplicați stiluri CSS pentru 
    3. Telefon
    4. Legături la profile de rețele sociale
 3. Pagina trebuie să includă un formular (nefuncțional) de contact
+
+* Săptămâna 3
+:PROPERTIES:
+:CUSTOM_ID: s03
+:END:
+** Recapitulare curs
+
+- arhitectura client-server
+- scripturi CGI
+
+** HTML + CSS
+
+Separarea conținutului de prezentare în paginile HTML.
+
+*** Exercițiu                                                      :noexport:
+
+Continuăm exercițiul de la laboratorul precedent adăugând /elementele semantice/ în pagină.
+
+*Cerințe*:
+1. O singură foaie de stil în pagină.
+2. Pagina trebuie să includă date (fictive) de contact:
+   1. Adresă
+   2. Adresă de e-mail
+   3. Telefon
+   4. Legături la profile de rețele sociale
+3. Pagina trebuie să includă un formular (nefuncțional) de contact
+4. Adăugați următoarele elemente semantice în pagină: =<main>=, =<footer>=, =<section>= și/sau =<article>=.
+5. Stilizați pagina astfel încât:
+   1. Textul să fie afișat cu un [[https://fonts.google.com/][font Google]]
+   2. Dimensiunea semnelor și spațierea liniilor să fie altele decât cele implicite
+   3. Datelor de contact să le fie alăturate iconițe [[https://fontawesome.com/][Font Awesome]]
 
 * Resurse utile
 :PROPERTIES:
