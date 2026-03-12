@@ -145,6 +145,7 @@ Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ 
 6. [[https://github.com/sindresorhus/awesome#contents][Awesome lists about all kinds of interesting topics]]
 7. [[https://validator.w3.org/][The W3C Markup Validation Service]]
 8. [[https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements][Semantic elements in HTML]]
+9. [[https://oleg-kantemirov.github.io/cheat-sheet/][CSS selectors and specificity]]
 * Date de contact
   :PROPERTIES:
   :CUSTOM_ID: contact
