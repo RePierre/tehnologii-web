@@ -55,8 +55,7 @@ Vă rugăm să completați chestionarul online  „Percepțiile studenților des
 
 Separarea conținutului de prezentare în paginile HTML.
 
-*** Exercițiu                                                    :noexport:
-
+*** Exercițiu
 
 Creați pagina de contact pentru afacerea proprie; aplicați stiluri CSS pentru a îmbunătăți aspectul paginii.
 
@@ -99,6 +98,40 @@ Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ 
    1. Textul să fie afișat cu un [[https://fonts.google.com/][font Google]]
    2. Dimensiunea semnelor și spațierea liniilor să fie altele decât cele implicite
    3. Datelor de contact să le fie alăturate iconițe [[https://fontawesome.com/][Font Awesome]]
+
+* Săptămâna 4
+:PROPERTIES:
+:CUSTOM_ID: s04
+:END:
+
+** Recapitulare curs
+
+- SDLC
+- Arhitectura aplicațiilor Web
+
+** HTML + CSS
+
+- prioritate selectori CSS
+- responsive design
+
+*** Exercițiu                                                    :noexport:
+
+Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ în marcajul HTML; aplicați stiluri CSS pentru a îmbunătăți aspectul paginii și a asigura un design /responsive/.
+
+*Cerințe*:
+1. O singură foaie de stil în pagină.
+2. Pagina trebuie să includă date (fictive) de contact:
+   1. Adresă
+   2. Adresă de e-mail
+   3. Telefon
+   4. Legături la profile de rețele sociale
+3. Pagina trebuie să includă un formular (nefuncțional) de contact
+4. Adăugați următoarele elemente semantice în pagină: =<main>=, =<footer>=, =<section>= și/sau =<article>=.
+5. Stilizați pagina astfel încât:
+   1. Textul să fie afișat cu un [[https://fonts.google.com/][font Google]]
+   2. Dimensiunea semnelor și spațierea liniilor să fie altele decât cele implicite
+   3. Datelor de contact să le fie alăturate iconițe [[https://fontawesome.com/][Font Awesome]]
+   4. Pagina să se adapteze automat la dimensiunea dispozitivului de pe care este accesată.
 
 * Resurse utile
 :PROPERTIES:
