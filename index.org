@@ -151,7 +151,7 @@ Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ 
 - [[https://quarknerd.com/#css-projects][O colecție de aplicații dezvoltate doar în HTML+CSS]]
 - [[https://dev.to/madsstoumann/re-creating-a-pantone-color-deck-in-css-3108][O paletă de culori în CSS]]
 
-*** Exercițiu                                                    :noexport:
+*** Exercițiu
 
 Prietenul vostru Gică și-a descoperit recent pasiunea pentru grădinărit și a decis să-și transforme pasiunea într-o afacere. Așa că, după ce și-a umplut pepinera cu diverse plante alese strategic a venit să vă ceară ajutorul în crearea unei pagini Web prin intermediul căreia să își promoveze afacerea. Știind că plantele sunt încă în pepineră și nu are cum să le facă poze, Gică vă roagă ca în primul prototip al paginii să folosiți imagini de pe Internet, dar fiind conștient de problemele care pot apărea din cauza utilizării inadecvate a imaginilor supuse dreptului de autor, Gică insistă ca imaginile pe care le veți utiliza să fie sub licență publică. Totodată, Gică știe că majoritatea utilizatorilor de Internet din ziua de astăzi folosesc mai mult dispozitivele mobile pentru accesarea paginilor Web decât calculatoarele clasice, așa că vă roagă să îi faceți pagina Web astfel încât să poată fi vizualizată de pe mai multe tipuri de dispozitive.
 
