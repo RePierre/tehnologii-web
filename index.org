@@ -114,7 +114,7 @@ Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ 
 - prioritate selectori CSS
 - responsive design
 
-*** Exercițiu                                                    :noexport:
+*** Exercițiu
 
 Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ în marcajul HTML; aplicați stiluri CSS pentru a îmbunătăți aspectul paginii și a asigura un design /responsive/.
 
@@ -132,6 +132,25 @@ Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ 
    2. Dimensiunea semnelor și spațierea liniilor să fie altele decât cele implicite
    3. Datelor de contact să le fie alăturate iconițe [[https://fontawesome.com/][Font Awesome]]
    4. Pagina să se adapteze automat la dimensiunea dispozitivului de pe care este accesată.
+
+* Săptămâna 5
+:PROPERTIES:
+:CUSTOM_ID: s05
+:END:
+
+** Recapitulare curs
+
+- Introducere în limbajul PHP
+
+** Recapitulare laborator
+
+- responsive design
+
+*** Exercițiu                                                    :noexport:
+
+Prietenul vostru Gică și-a descoperit recent pasiunea pentru grădinărit și a decis să-și transforme pasiunea într-o afacere. Așa că, după ce și-a umplut pepinera cu diverse plante alese strategic a venit să vă ceară ajutorul în crearea unei pagini Web prin intermediul căreia să își promoveze afacerea. Știind că plantele sunt încă în pepineră și nu are cum să le facă poze, Gică vă roagă ca în primul prototip al paginii să folosiți imagini de pe Internet, dar fiind conștient de problemele care pot apărea din cauza utilizării inadecvate a imaginilor supuse dreptului de autor, Gică insistă ca imaginile pe care le veți utiliza să fie sub licență publică. Totodată, Gică știe că majoritatea utilizatorilor de Internet din ziua de astăzi folosesc mai mult dispozitivele mobile pentru accesarea paginilor Web decât calculatoarele clasice, așa că vă roagă să îi faceți pagina Web astfel încât să poată fi vizualizată de pe mai multe tipuri de dispozitive.
+
+Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat în ajutor și începeți să aplicați cunoștințele dobândite la Tehnologii Web pentru a implementa pagina de care are nevoie.
 
 * Resurse utile
 :PROPERTIES:
