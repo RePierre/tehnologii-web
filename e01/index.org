@@ -37,7 +37,7 @@ Instrucțiunile din acest exercițiu sunt pentru GNU/Linux. Acestea ar trebui s�
 ** Creăm un script
 
 #+begin_src shell
-  echo "<?php echo \"Hello World!\" ?>" > /tmp/tehnologii-web/hw.php
+  echo '<?php echo \"Hello World!\" ?>' > /tmp/tehnologii-web/hw.php
 #+end_src
 
 *** Verificăm că scriptul a fost creat
@@ -45,6 +45,7 @@ Instrucțiunile din acest exercițiu sunt pentru GNU/Linux. Acestea ar trebui s�
 #+begin_src shell
   ls -al /tmp/tehnologii-web/
 #+end_src
+
 ** Rulăm scriptul într-un container
 
 #+begin_src shell

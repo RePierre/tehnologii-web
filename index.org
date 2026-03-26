@@ -164,9 +164,7 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 
 ** Recapitulare curs
 
-** =Hello World!= din PHP și Docker
-
-*** [[file:e01/][Exercițiu]]
+** [[file:e01/][=Hello World!= din PHP și Docker]]
 
 * Resurse utile
 :PROPERTIES:
