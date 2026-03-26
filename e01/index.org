@@ -1,0 +1,121 @@
+#+title: Hello World din PHP și Docker
+#+date: <2026-03-26 Jo>
+#+author: Petru Rebeja
+#+language: ro
+#+select_tags: export
+#+startup: content
+#+exclude_tags: noexport
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: timestamp:nil title:t toc:t todo:t |:t
+#+options: d:(not "LOGBOOK") date:nil e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+setupfile: ../theme-readtheorg.setup
+#+html_mathjax: align: left indent: 5em tagside: left font: Neo-Euler
+
+* Introducere
+
+Pentru lucrul la acest exercițiu aveți nevoie de [[https://www.docker.com/][Docker]].
+
+Instrucțiunile din acest exercițiu sunt pentru GNU/Linux. Acestea ar trebui să funcționeze și pe Mac OS, dar nu au fost testate pe acest sistem de operare.  Dacă utilizați sistemul de operare Windows, activați [[https://learn.microsoft.com/en-us/windows/wsl/install][Windows Subsystem for Linux]] și [[https://docs.docker.com/desktop/features/wsl/][integrarea WSL cu Docker]]; apoi utilizați consola =Bash= pentru a rula comenzile din acest exercițiu.
+
+* Pregătirea mediului de lucru
+
+** Crearea directorului pentru codul-sursă
+
+#+begin_src shell
+  mkdir -p /tmp/tehnologii-web/
+#+end_src
+
+* Rularea unui script PHP într-un container Docker
+
+** Descărcăm imaginea =php:8.4-cli=
+
+#+begin_src shell :results none
+  docker pull php:8.4-cli
+#+end_src
+
+** Creăm un script
+
+#+begin_src shell
+  echo "<?php echo \"Hello World!\" ?>" > /tmp/tehnologii-web/hw.php
+#+end_src
+
+*** Verificăm că scriptul a fost creat
+
+#+begin_src shell
+  ls -al /tmp/tehnologii-web/
+#+end_src
+** Rulăm scriptul într-un container
+
+#+begin_src shell
+  cd /tmp/tehnologii-web/ && \
+  docker run \
+         -it \
+         --rm \
+         --name my-running-script \
+         -v "$PWD":/tmp/tehnologii-web \
+         -w /tmp/tehnologii-web \
+         php:8.4-cli php hw.php
+#+end_src
+
+* Construirea unei imagini Docker folosind [[https://docs.docker.com/get-started/docker-concepts/building-images/writing-a-dockerfile/][Dockerfile]]
+
+** Descărcăm imaginea =php:8.4-apache=
+
+#+begin_src shell :results none
+  docker pull php:8.4-apache
+#+end_src
+
+** Creăm o pagină
+
+#+begin_src shell :results silent
+  echo "<!DOCTYPE html>
+  <html>
+    <body>
+      <?php echo \"Hello world!\" ?>
+    </body>
+  </html>
+  " > /tmp/tehnologii-web/index.php
+#+end_src
+
+*** Verificăm dacă scriptul =PHP= a fost creat
+
+#+begin_src shell
+  ls -al /tmp/tehnologii-web/
+#+end_src
+
+** Creăm fișierul =Dockerfile=
+
+#+begin_src shell :results silent
+  echo "FROM php:8.4-apache
+  COPY index.php /var/www/html/
+  " > /tmp/tehnologii-web/Dockerfile
+#+end_src
+
+** Construim imaginea =Docker= și rulăm aplicația într-un container
+
+#+begin_src shell :results silent
+  cd /tmp/tehnologii-web/ && \
+  docker build -t hello-world-php . && \
+  docker run -d -p 8081:80 --name hw-app-container hello-world-php
+#+end_src
+
+Aplicația =PHP= poate fi accesată la adresa http://localhost:8081/.
+
+** Oprim containerul și ștergem imaginea
+
+#+begin_src shell :results silent
+  docker stop hw-app-container && \
+      docker rm hw-app-container && \
+      docker rmi localhost/hello-world-php
+#+end_src
+
+
+* Exercițiu suplimentar
+
+Construiți o imagine =Docker= pentru exemplul de interacțiune din [[https://edu.info.uaic.ro/web-technologies/demos/php/php.zip][exemplele de programe PHP]] disponibile pe pagina cursului. Rulați un container pe baza imaginii obținute.
+
+* Resurse utile
+
+- [[https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/][Conceptele Docker]]
+- [[https://docs.docker.com/reference/dockerfile/][Formatul fișierului Dockerfile]]

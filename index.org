@@ -157,6 +157,17 @@ Prietenul vostru Gică și-a descoperit recent pasiunea pentru grădinărit și 
 
 Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat în ajutor și începeți să aplicați cunoștințele dobândite la Tehnologii Web pentru a implementa pagina de care are nevoie.
 
+* Săptămâna 6
+:PROPERTIES:
+:CUSTOM_ID: s06
+:END:
+
+** Recapitulare curs
+
+** =Hello World!= din PHP și Docker
+
+*** [[file:e01/][Exercițiu]]                                                    :noexport:
+
 * Resurse utile
 :PROPERTIES:
 :CUSTOM_ID: resurse
