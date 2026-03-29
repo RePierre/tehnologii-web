@@ -447,5 +447,5 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 :CUSTOM_ID: e-mail
 :END:
    #+begin_src emacs-lisp :exports code
-   (concat "petru" "." "rebeja" "@gmail.com")
+   (concat "petru" "@" "rebeja" ".eu")
    #+end_src
