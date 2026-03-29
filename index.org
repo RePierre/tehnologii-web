@@ -166,6 +166,88 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 
 ** [[file:e01/][=Hello World!= din PHP și Docker]]
 
+* Proiecte
+:PROPERTIES:
+:CUSTOM_ID: proiecte
+:END:
+
+** Preambul
+:PROPERTIES:
+:CUSTOM_ID: preambul
+:END:
+
+- Consultați [[https://edu.info.uaic.ro/web-technologies/web-projects.html][cerințele și recomandările]] de pe pagina cursului.
+- Alegerea proiectului se face pe principiul primul venit --- primul servit;
+- *Termenul-limită pentru înscrieri este 12 aprilie 2026, ora 23:59*.
+
+** Propuneri proiecte
+:PROPERTIES:
+:CUSTOM_ID: propuneri
+:END:
+
+*** =NuW= --- Nuclear Power Plant Web Manager
+:PROPERTIES:
+:CUSTOM_ID: nuw
+:END:
+
+Să se realizeze un sistem Web pentru managementul centralelor nucleare: de la amplasarea optimă a reactoarelor în funcție de eficiență, sol, minimizarea riscurilor și alți factori pana la vizualizarea stării și monitorizarea în timp-real a fiecărui reactor și realizarea de statistici privind gradul de functionalitate, eficiență, pericol, pe baza proceselor atomo-nucleare, condițiile meteo și de uzură (de pildă, oprirea temporara pentru reparatii – planificate sau nu). Se vor genera atat informații numerice, cat și vizualizari sugestive. Starea curentă a centralei nucleare va putea fi consultată și prin intermediul fluxurilor de date RSS. Orice situație de excepție va fi raportata imediat prin e-mail si via notificari direct in navigatorul Web.
+
+*** =SOr= --- Soft Drink Web Organizer
+:PROPERTIES:
+:CUSTOM_ID: sor
+:END:
+
+Să se conceapă o aplicație Web care realizeaza managementul preferintelor unei persoane sau grup de persoane în ceea de privește consumul de băuturi non-alcoolice: ceaiuri, lactate, sucuri, siropuri etc. Se va oferi suport și pentru gestiunea (meta-)datelor aferente: categorie, pret, ingrediente, imagini, restricții (e.g., alergeni, regim special), perisabilitate, valabilitate, disponibilitate în funcție de sezon ori regiune geografică, localuri specifice și altele. Sistemul va oferi suport pentru activități de realizare a listelor de cumparaturi, plus administrarea utilizatorilor. Se vor genera statistici diverse ce pot fi exportate în formate deschise, textuale si grafice – minimal, CSV si SVG. Se va realiza, de asemenea, un clasament al celor mai populare produse, disponibil si ca flux de date RSS. Bonus: recurgerea la datele disponibile liber la [[https://world.openfoodfacts.org/category/beverages][Open Food Facts]].
+
+*** =ReP= --- Resource Web Planner
+:PROPERTIES:
+:CUSTOM_ID: rep
+:END:
+
+Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articolelor esentiale și consumabilelor (e.g., becuri, lemne pentru foc, condimente, toner, cosmetice, pahare de unică folosință, pioneze, medicamente de uz general,...), plus a pieselor de schimb pentru diverse dispozitive – de exemplu, aparate electr(on)ice, automobile, ascensoare etc. – dintr-o gospodărie, organizație sau întreprindere. Instrumentul va fi capabil să notifice, periodic sau la date fixe (eventual, prestabilite), utilizatorul sau un grup de utilizatori în ceea ce privește epuizarea iminentă a unor materiale sau verificarea anumitor echipamente și angrenaje. Aceste notificări vor fi semnalate atât direct în cadrul interfeței aplicației, cât și prin poșta electronică. Se vor oferi posibilități de importare/exportare a datelor în formatele CSV, JSON si XML, iar diversele statistici generate vor putea fi consultate sub forma de documente HTML și PDF.
+
+*** =GiW= --- Gift Web Manager
+:PROPERTIES:
+:CUSTOM_ID: giw
+:END:
+
+Să se conceapă o aplicație Web cu rol de asistent digital oferind sfaturi de alegere a unui cadou – de exemplu, buchet de flori, parfum, joc electronic, articol casnic, abonament la spa – dedicat unei persoane ori grup de persoane, în funcție de preferințe, circumstante (zi de naștere, onomastică, finalizare a studiilor etc.), context (familial, colegial, profesional), buget, ofertant (e.g., doar produsele ce aparțin unui anumit brand), anotimp. Fiecărei categorii de posibile cadouri i se vor atașa proprietăți specifice, inclusiv ingrediente, preț, comentarii, tag-uri asociate, relații cu alte resurse înrudite. De asemenea, se va simula expedierea cadourilor achiziționate la o adresă stabilită, eventual în regim anonim. Administratorul sistemului va avea posibilitatea să consulte rapoarte – generate in formatele HTML, JSON și PDF – privind cadourile recomandate și cele alese efectiv de utilizatori în funcție de categorie, profil al utilizatorilor, o anumită perioada de timp etc.
+
+*** =DEW= --- Drug Explorer on Web
+:PROPERTIES:
+:CUSTOM_ID: dew
+:END:
+
+Folosind datele statistice privitoare la [[https://data.gov.ro/organization/agentia-nationala-antidrog][situația drogurilor în România]], să se realizeze un instrument Web de analiză și de vizualizare multicriterială a consumului de droguri pe o perioadă dată, în corelație cu infracțiunile și confiscările efectuate, plus urgențele medicale și campaniile de prevenire a consumului de stupefiante. Căutările multi-criteriale și rapoartele aferente generate vor fi expuse ca documente HTML și in format CSV. Vizualizările generate – minim 3 maniere – vor putea fi exportate în formatele PNG, WebP și SVG.
+
+*** =WaT= --- Web Manager for Water Turbines
+:PROPERTIES:
+:CUSTOM_ID: wat
+:END:
+
+Să se dezvolte un sistem Web pentru managementul hidrocentralelor: de la amplasarea optimă a turbinelor hidrocentralei în funcție de eficiență, sol, minimizarea riscurilor și alți factori până la vizualizarea stării și monitorizarea în timp-real a fiecărei turbine. Se vor genera statistici privind gradul de funcționalitate, eficiență, în funcție de debitul de apa, condițiile meteo și de uzură (de pildă, oprire temporară în caz de secetă ori pentru reparații – planificate sau nu). Se vor oferi atât informații numerice, cât și vizualizări sugestive. Starea curentă a centralei va putea fi consultată și prin intermediul fluxurilor de date RSS. Orice situație de excepție va fi raportată imediat prin e-mail și via notificari direct in browser-ul Web.
+
+*** =MaG= --- Marvel Game
+:PROPERTIES:
+:CUSTOM_ID: mag
+:END:
+
+Pe baza [[https://marvel.fandom.com/wiki/Marvel_Database][datelor despre eroii benzilor desenate Marvel]], să se creeze un joc Web educativ – cu scenariu, niveluri de dificultate, miză și condiții de victorie/înfrângere stabilite de echipă – destinat adolescenților. Clasamentul celor mai buni jucători va fi disponibil via notificări la nivel de navigator Web și ca flux de date RSS. Bonus: implementarea aspectelor precum [[https://www.w3.org/standards/webdesign/i18n][internaționalizarea]] și [[https://www.w3.org/WAI/fundamentals/accessibility-intro/][accesibilitatea]].
+
+*** =Win= --- Wind Turbine Management on Web
+:PROPERTIES:
+:CUSTOM_ID: win
+:END:
+
+Să se dezvolte un sistem Web pentru managementul centralelor electrice eoliene: de la amplasarea turbinelor eoliene în funcție de eficienta, sol, minimizarea riscului de prăbușire și alți factori pana la vizualizarea stării și monitorizarea în timp-real a fiecărei turbine. Se vor realiza statistici privind gradul de funcționalitate, eficiență, în funcție de condițiile meteo și de uzură (de pildă, oprire temporara pentru reparatii – planificate sau nu). Se vor oferi atât informații numerice, cât și vizualizari sugestive. Starea curentă a centralei va putea fi consultată și prin intermediul fluxurilor de date RSS. Orice situație de excepție va fi raportată imediat prin e-mail și via notificări la nivel de browser Web.
+
+*** =PIV= --- PISA Results Visualizer
+:PROPERTIES:
+:CUSTOM_ID: piv
+:END:
+
+Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.kaggle.com/datasets/thedevastator/pisa-performance-scores-by-country][datelor referitoare la testul PISA]]. Statisticile și vizualizările generate – minim 3 maniere – vor putea fi exportate în formatele CSV, WebP și SVG. Sistemul va oferi suport și pentru căutarea/filtrarea multi-criterială a datelor, inclusiv comparații între țări, discipline vizate, perioade de timp etc. De considerat și [[https://www.kaggle.com/theworldbank/education-statistics][Education Statistics]]. Bonus: pentru asigurarea performanței, se va include propriul mecanism de /caching/.
+
 * Resurse utile
 :PROPERTIES:
 :CUSTOM_ID: resurse
