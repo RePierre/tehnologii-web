@@ -28,10 +28,7 @@
 :CUSTOM_ID: avize
 :END:
 
-** Apel de participare la studiu --- Percepțiile studenților despre utilizarea IA în procesul educațional
-
-Vă rugăm să completați chestionarul online  „Percepțiile studenților despre utilizarea IA în procesul educațional” la următoarea adresă: https://forms.gle/TcA94EeW7CdvsEzy5.
-
+-----
 * Săptămâna 1
 :PROPERTIES:
 :CUSTOM_ID: s01
@@ -165,6 +162,8 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 ** Recapitulare curs
 
 ** [[file:e01/][=Hello World!= din PHP și Docker]]
+
+-----
 
 * Proiecte
 :PROPERTIES:
