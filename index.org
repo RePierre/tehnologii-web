@@ -28,7 +28,13 @@
 :CUSTOM_ID: avize
 :END:
 
+** A început înscrierea pentru proiecte
+
+În secțiunea [[#proiecte][=Proiecte=]] au fost afișate proiectele propuse și formularul de înscriere. Termen-limită: 12 aprilie 2026, ora 23:59.
+Dacă apar erori în afișarea proiectelor, statisticilor sau formularului de înregistrare vă rog să le semnalați pe e-mail.
+
 -----
+
 * Săptămâna 1
 :PROPERTIES:
 :CUSTOM_ID: s01
