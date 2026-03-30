@@ -28,6 +28,11 @@
 :CUSTOM_ID: avize
 :END:
 
+** Actualizări legate de înscrierea pentru proiecte
+[2026-03-30 Lu 19:49]
+
+Echipele înscrise până la momentul publicării anunțului au fost trecute la fiecare [[#proiecte][proiect]]. Înscrierile echipelor =Proiect PIV= și =the boss= au fost invalidate; motivul --- [[https://edu.info.uaic.ro/web-technologies/web-projects.html][echipa trebuie să fie formată din 2 studenți]].
+
 ** A început înscrierea pentru proiecte
 [2026-03-29 Du 12:53]
 
