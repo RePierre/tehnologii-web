@@ -153,7 +153,7 @@ Creați pagina de contact pentru afacerea proprie folosind /elemente semantice/ 
 
 ** Recapitulare laborator
 
-- responsive design
+- Responsive design
 
 *** Exemple
 
@@ -175,8 +175,21 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 
 ** [[file:e01/][=Hello World!= din PHP și Docker]]
 
------
+* Săptămâna 7
+:PROPERTIES:
+:CUSTOM_ID: s07
+:END:
 
+** Recapitulare curs
+
+- Dezvoltarea aplicațiilor Web în PHP
+
+** Programare în limbajul PHP
+
+- Continuăm [[file:e01/][exercițiul]] început în laboratorul precedent
+- Configurarea mediului de lucru pentru proiecte
+
+-----
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
