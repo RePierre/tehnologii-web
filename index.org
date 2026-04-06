@@ -28,6 +28,11 @@
 :CUSTOM_ID: avize
 :END:
 
+** Actualizări legate de înscrierea pentru proiecte (cont.)
+[2026-04-06 Lu 19:27]
+
+Echipele înscrise până la momentul publicării anunțului au fost trecute la fiecare [[#proiecte][proiect]]. Deoarece proiectul =SoR= a atins pragul maxim de echipe, înscrierile viitoare pentru acest proiect vor fi invalidate.
+
 ** Actualizări legate de înscrierea pentru proiecte
 [2026-03-30 Lu 19:49]
 
@@ -237,6 +242,7 @@ Să se conceapă o aplicație Web care realizeaza managementul preferintelor une
 4. Binary Minds
 5. FERIUS
 6. Dania
+7. Nokia
 
 *** =ReP= --- Resource Web Planner
 :PROPERTIES:
@@ -252,6 +258,7 @@ Să se dezvolte o aplicație Web care permite gestionarea pe categorii a articol
 3. The Two & Twos
 4. Șmecherii
 5. Padurariu + Stefanache
+6. Maris
 
 *** =GiW= --- Gift Web Manager
 :PROPERTIES:
@@ -314,6 +321,7 @@ Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.k
 **** Echipe
 
 1. Ștrudel de la Lidl
+2. ezMelora
 
 ** Înscrieri
 
