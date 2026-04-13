@@ -332,31 +332,6 @@ Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.k
 1. Ștrudel de la Lidl
 2. ezMelora
 
-** Înscrieri
-
-Pentru a alege proiectul completați [[https://forms.gle/4Jn17bDFmYfAUF8AA][formularul]] afișat mai jos.
-
-#+begin_export html
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7vfAJH9pR3h313FfaafX_Onc6e3l5B5J5Dkj3BP4ioY8NFA/viewform?embedded=true"
-        width="640"
-        height="1565"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0">
-  Se încarcă…
-</iframe>
-#+end_export
-
-** Statistici înscrieri
-
-#+begin_export html
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR2yv4YCpRc09fpHjonR4m92VnKn9kFgMhKjUEGII4O0GsWCxTLid7ztCiZmyt_4KS8fZ6K7T6cdrPv/pubhtml?gid=293572831&amp;single=true&amp;widget=true&amp;headers=false"
-        width="420"
-        height="300">
-
-</iframe>
-#+end_export
-
 -----
 * Resurse utile
 :PROPERTIES:
