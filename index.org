@@ -28,6 +28,11 @@
 :CUSTOM_ID: avize
 :END:
 
+** Înscrierea pentru proiecte s-a încheiat
+[2026-04-13 Lu 09:06]
+
+Înscrierea pentru proiecte s-a încheiat. Echipele înscrise au fost trecute la fiecare [[#proiecte][proiect]]. Înscrierile echipelor =Magdala= și =Salata= au fost invalidate deoarece [[https://edu.info.uaic.ro/web-technologies/web-projects.html][echipa trebuie să fie formată din 2 studenți]].
+
 ** Actualizări legate de înscrierea pentru proiecte (cont.)
 [2026-04-06 Lu 19:27]
 
@@ -299,6 +304,10 @@ Să se dezvolte un sistem Web pentru managementul hidrocentralelor: de la amplas
 :END:
 
 Pe baza [[https://marvel.fandom.com/wiki/Marvel_Database][datelor despre eroii benzilor desenate Marvel]], să se creeze un joc Web educativ – cu scenariu, niveluri de dificultate, miză și condiții de victorie/înfrângere stabilite de echipă – destinat adolescenților. Clasamentul celor mai buni jucători va fi disponibil via notificări la nivel de navigator Web și ca flux de date RSS. Bonus: implementarea aspectelor precum [[https://www.w3.org/standards/webdesign/i18n][internaționalizarea]] și [[https://www.w3.org/WAI/fundamentals/accessibility-intro/][accesibilitatea]].
+
+**** Echipe
+
+1. Fabian - Stefan
 
 *** =Win= --- Wind Turbine Management on Web
 :PROPERTIES:
