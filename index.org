@@ -200,6 +200,24 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 - Configurarea mediului de lucru pentru proiecte
 
 -----
+
+* Săptămâna 8
+:PROPERTIES:
+:CUSTOM_ID: s08
+:END:
+
+- Vacanță
+- Lucru la proiect
+
+* Săptămâna 9
+:PROPERTIES:
+:CUSTOM_ID: s09
+:END:
+
+- Recapitulare curs
+- Discuții asupra proiectelor
+- Programare PHP
+
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
