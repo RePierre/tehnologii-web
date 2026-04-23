@@ -28,6 +28,11 @@
 :CUSTOM_ID: avize
 :END:
 
+** Actualizări legate de înscrierea pentru proiect (cont. I)
+[2026-04-23 Jo 19:41]
+
+Deoarece au rămas suficient de mute proiecte neatribuite, echipele formate dintr-un singur proiect au fost alocate la proiectele rămase, urmând să fie penalizate conform [[https://edu.info.uaic.ro/web-technologies/web-projects.html#eval][criteriilor de evaluare]].
+
 ** Înscrierea pentru proiecte s-a încheiat
 [2026-04-13 Lu 09:06]
 
@@ -316,6 +321,10 @@ Folosind datele statistice privitoare la [[https://data.gov.ro/organization/agen
 
 Să se dezvolte un sistem Web pentru managementul hidrocentralelor: de la amplasarea optimă a turbinelor hidrocentralei în funcție de eficiență, sol, minimizarea riscurilor și alți factori până la vizualizarea stării și monitorizarea în timp-real a fiecărei turbine. Se vor genera statistici privind gradul de funcționalitate, eficiență, în funcție de debitul de apa, condițiile meteo și de uzură (de pildă, oprire temporară în caz de secetă ori pentru reparații – planificate sau nu). Se vor oferi atât informații numerice, cât și vizualizări sugestive. Starea curentă a centralei va putea fi consultată și prin intermediul fluxurilor de date RSS. Orice situație de excepție va fi raportată imediat prin e-mail și via notificari direct in browser-ul Web.
 
+**** Echipe
+
+1. Salata
+
 *** =MaG= --- Marvel Game
 :PROPERTIES:
 :CUSTOM_ID: mag
@@ -349,6 +358,8 @@ Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.k
 
 1. Ștrudel de la Lidl
 2. ezMelora
+3. Proiect PIV
+4. Magdala
 
 -----
 * Resurse utile
