@@ -299,6 +299,7 @@ Să se conceapă o aplicație Web cu rol de asistent digital oferind sfaturi de 
 
 1. Powerpuff
 2. webEnjoyers
+3. The Boss
 
 *** =DEW= --- Drug Explorer on Web
 :PROPERTIES:
