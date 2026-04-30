@@ -204,8 +204,6 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 - Continuăm [[file:e01/][exercițiul]] început în laboratorul precedent
 - Configurarea mediului de lucru pentru proiecte
 
------
-
 * Săptămâna 8
 :PROPERTIES:
 :CUSTOM_ID: s08
@@ -222,6 +220,20 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 - Recapitulare curs
 - Discuții asupra proiectelor
 - Programare PHP
+
+* Săptămâna 10
+:PROPERTIES:
+:CUSTOM_ID: s10
+:END:
+
+- Discuții asupra proiectelor
+- Procesarea și generarea datelor XML în PHP
+
+** Exercițiu: Generarea unui flux RSS
+
+  Pornind de la [[https://edu.info.uaic.ro/web-technologies/demos/php/php.zip][exemplele de programe PHP]] de pa pagina cursului, generați un document care să respecte [[https://www.rssboard.org/rss-specification][specificațiile formatului RSS]] și conține cele mai haioase bancuri seci. Fiecare banc va fi însoțit de o legătură la pagina sursă.
+
+-----
 
 * Proiecte
 :PROPERTIES:
