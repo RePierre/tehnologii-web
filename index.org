@@ -54,6 +54,8 @@ Echipele înscrise până la momentul publicării anunțului au fost trecute la 
 În secțiunea [[#proiecte][=Proiecte=]] au fost afișate proiectele propuse și formularul de înscriere. Termen-limită: 12 aprilie 2026, ora 23:59.
 Dacă apar erori în afișarea proiectelor, statisticilor sau formularului de înregistrare vă rog să le semnalați pe e-mail.
 
+* Linie orizontală 1                                                 :ignore:
+
 -----
 
 * Săptămâna 1
@@ -226,6 +228,7 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 :CUSTOM_ID: s10
 :END:
 
+- Recapitulare curs
 - Discuții asupra proiectelor
 - Procesarea și generarea datelor XML în PHP
 
@@ -233,8 +236,17 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 
   Pornind de la [[https://edu.info.uaic.ro/web-technologies/demos/php/php.zip][exemplele de programe PHP]] de pa pagina cursului, generați un document care să respecte [[https://www.rssboard.org/rss-specification][specificațiile formatului RSS]] și conține cele mai haioase bancuri seci. Fiecare banc va fi însoțit de o legătură la pagina sursă.
 
------
+* Săptămâna 11
+:PROPERTIES:
+:CUSTOM_ID: s11
+:END:
 
+- Recapitulare curs
+- Discuții asupra proiectelor
+- Procesarea și generarea datelor XML în PHP
+
+* Linie orizontală 2                                                 :ignore:
+-----
 * Proiecte
 :PROPERTIES:
 :CUSTOM_ID: proiecte
