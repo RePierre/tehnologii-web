@@ -245,6 +245,14 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 - Discuții asupra proiectelor
 - Procesarea și generarea datelor XML în PHP
 
+* Săptămâna 12
+:PROPERTIES:
+:CUSTOM_ID: s12
+:END:
+
+- Recapitulare curs
+- Lucru la proiect
+
 * Linie orizontală 2                                                 :ignore:
 -----
 * Proiecte
