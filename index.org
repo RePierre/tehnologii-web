@@ -253,6 +253,14 @@ Dat fiind faptul că Gică este un prieten atât de bun, îi săriți imediat î
 - Recapitulare curs
 - Lucru la proiect
 
+* Săptămâna 13
+:PROPERTIES:
+:CUSTOM_ID: s13
+:END:
+
+- Recapitulare curs
+- Lucru la proiect
+
 * Linie orizontală 2                                                 :ignore:
 -----
 * Proiecte
