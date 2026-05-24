@@ -424,6 +424,7 @@ Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.k
 
 - [[https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/][The Pragmatic Programmer]]
 - [[https://www.amazon.com/gp/product/B09B8LFKQL?_encoding=UTF8&priceChange=1][A Philosophy of Software Design]]
+- [[https://www.amazon.com/Fundamentals-Software-Architecture-Engineering-Approach-dp-1098175514/dp/1098175514][Fundamentals of Software Architecture]]
 
 * Date de contact
   :PROPERTIES:
