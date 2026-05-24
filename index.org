@@ -416,6 +416,15 @@ Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.k
 7. [[https://validator.w3.org/][The W3C Markup Validation Service]]
 8. [[https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantic_elements][Semantic elements in HTML]]
 9. [[https://oleg-kantemirov.github.io/cheat-sheet/][CSS selectors and specificity]]
+
+* Lectură recomandată
+:PROPERTIES:
+:CUSTOM_ID: books
+:END:
+
+- [[https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/][The Pragmatic Programmer]]
+- [[https://www.amazon.com/gp/product/B09B8LFKQL?_encoding=UTF8&priceChange=1][A Philosophy of Software Design]]
+
 * Date de contact
   :PROPERTIES:
   :CUSTOM_ID: contact
