@@ -432,16 +432,16 @@ Să se implementeze o aplicație Web de vizualizare flexibilă a [[https://www.k
 
 | Data          | Sala | Interval orar  | Echipa                         |
 |---------------+------+----------------+--------------------------------|
-| 13 iunie 2026 | C405 | 09:00 -- 09:20 | Binary Minds                   |
+| 13 iunie 2026 | C405 | 09:00 -- 09:20 | Maris                          |
 | 13 iunie 2026 | C405 | 09:20 -- 09:40 | NuclearFloppaUni               |
 | 13 iunie 2026 | C405 | 09:40 -- 10:00 | FERIUS                         |
-| 13 iunie 2026 | C405 | 10:00 -- 10:20 | Nokia                          |
+| 13 iunie 2026 | C405 | 10:00 -- 10:20 | Binary Minds                   |
 | 13 iunie 2026 | C405 | 10:20 -- 10:40 | Proiect PIV                    |
 | 13 iunie 2026 | C405 | 10:40 -- 11:00 | Malin & Edi                    |
 | 13 iunie 2026 | C405 | 11:00 -- 11:20 | ⏸️                             |
 | 13 iunie 2026 | C405 | 11:20 -- 11:40 | DLG                            |
 | 13 iunie 2026 | C405 | 11:40 -- 12:00 | Padurariu + Stefanache         |
-| 13 iunie 2026 | C405 | 12:00 -- 12:20 | Maris                          |
+| 13 iunie 2026 | C405 | 12:00 -- 12:20 | Nokia                          |
 | 13 iunie 2026 | C405 | 12:20 -- 12:40 | FC Cojeasca                    |
 | 13 iunie 2026 | C405 | 12:40 -- 13:00 | De la Gaze                     |
 | 13 iunie 2026 | C405 | 13:00 -- 13:20 | ⏸️                             |
