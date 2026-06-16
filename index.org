@@ -28,6 +28,13 @@
 :CUSTOM_ID: avize
 :END:
 
+** Prezentarea proiectelor în sesiunea de reexaminări
+[2026-06-16 Ma 20:30]
+
+Echipele absente la prezentarea proiectelor în sesiune vor putea
+prezenta proiectul *joi, 25 iunie 2026 în intervalul orar 18:00 --
+19:00* în sala *C405*.
+
 ** A fost afișat programul prezentărilor proiectelor de curs
 [2026-06-03 Mi 22:42]
 
@@ -39,7 +46,6 @@ Observații:
 - Tabelul nu este final și poate suferi modificări.
 - Fiecare echipă (în afară de prima) este rugată să vină cu cel puțin
   20 de minute înainte de intervalul orar alocat pentru prezentare.
-
 
 ** Actualizări legate de înscrierea pentru proiect (cont. I)
 [2026-04-23 Jo 19:41]
